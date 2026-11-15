@@ -1,0 +1,13 @@
+# Only the website (docs/) and the source code that builds it go to GitHub.
+# Big, temporary or re-downloadable things stay on the team's computers.
+node_modules/
+media/raw/
+tts/
+video/public/
+video/out/
+demo/recordings/
+demo/out/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

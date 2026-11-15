@@ -1,0 +1,1249 @@
+[
+  {
+    "id": "rr",
+    "world": "moon",
+    "x": 300,
+    "y": 165,
+    "emoji": "🪞",
+    "year": 1969,
+    "status": "useful",
+    "a": 1,
+    "img": "images/rr.jpg",
+    "nasaId": "as11-40-5948",
+    "credit": "NASA",
+    "src": "https://www.jpl.nasa.gov/news/the-apollo-experiment-that-keeps-on-giving/",
+    "en": {
+      "name": "Apollo 11 Laser Reflector",
+      "short": "Reflector",
+      "place": "Sea of Tranquility",
+      "story": "I have no batteries and no power, but I'm still helping scientists today! I'm a box of mirrors on the Moon. Apollo 11 astronauts set me down in 1969. I just sit here quietly. Then scientists on Earth shine a laser at me, and I bounce the light right back! By timing the light's trip, they measure how far away the Moon is. They found that the Moon is slowly drifting away from Earth, about 3.8 centimeters every year. What would you like to measure in space?",
+      "science": "By timing the laser light's trip to me and back, scientists measure how far away the Moon is. They found that the Moon is slowly drifting away from Earth: about <b>3.8 cm every year</b>. The reflectors left by Apollo 11 and 14 each have <b>100 small glass prisms</b>, and Apollo 15's has <b>300</b>.",
+      "q": "What do scientists on Earth still do with this reflector?",
+      "opts": [
+        "Take selfies with it",
+        "Bounce lasers off it to measure the Moon's distance",
+        "Use it as a solar panel"
+      ],
+      "cap": "Buzz Aldrin next to the Apollo 11 experiments, July 1969",
+      "script": [
+        "I have no batteries and no power, but I'm still helping scientists today!",
+        "I'm a box of mirrors on the Moon.",
+        "Apollo 11 astronauts set me down in 1969.",
+        "I just sit here quietly.",
+        "Then scientists on Earth shine a laser at me, and I bounce the light right back!",
+        "By timing the light's trip, they measure how far away the Moon is.",
+        "They found that the Moon is slowly drifting away from Earth, about 3.8 centimeters every year.",
+        "What would you like to measure in space?"
+      ]
+    },
+    "ar": {
+      "name": "عاكس الليزر من أبولو 11",
+      "short": "العاكس",
+      "place": "بحر الهدوء",
+      "story": "ليس عندي بطاريات ولا أي طاقة، لكنني ما زلت أساعد العلماء حتى اليوم! أنا صندوق من المرايا على القمر. وضعني رواد أبولو 11 هنا سنة 1969. أنا فقط أجلس هنا بهدوء. ثم يطلق العلماء على الأرض ضوء الليزر نحوي، وأنا أعيده إليهم فورًا! وعندما يقيسون وقت رحلة الضوء، يعرفون كم يبعد القمر. واكتشفوا أن القمر يبتعد عن الأرض ببطء: حوالي 3.8 سنتيمتر كل سنة. ما الشيء الذي تحب أن تقيسه في الفضاء؟",
+      "science": "عندما يقيس العلماء وقت رحلة ضوء الليزر إليّ وعودته، يعرفون كم يبعد القمر. واكتشفوا أن القمر يبتعد عن الأرض ببطء: حوالي <b>3.8 سنتيمتر كل سنة</b>. في كل من عاكسَي أبولو 11 و14 <b>100 منشور زجاجي صغير</b>، وفي عاكس أبولو 15 <b>300</b>.",
+      "q": "ماذا يفعل العلماء على الأرض بهذا العاكس حتى اليوم؟",
+      "opts": [
+        "يلتقطون معه صورًا",
+        "يطلقون عليه الليزر ليقيسوا بُعد القمر",
+        "يستعملونه لوحًا شمسيًا"
+      ],
+      "cap": "باز ألدرين بجانب تجارب أبولو 11، تموز 1969",
+      "script": [
+        "ليس عندي بطاريات ولا أي طاقة، لكنني ما زلت أساعد العلماء حتى اليوم!",
+        "أنا صندوق من المرايا على القمر.",
+        "وضعني رواد أبولو 11 هنا سنة 1969.",
+        "أنا فقط أجلس هنا بهدوء.",
+        "ثم يطلق العلماء على الأرض ضوء الليزر نحوي، وأنا أعيده إليهم فورًا!",
+        "وعندما يقيسون وقت رحلة الضوء، يعرفون كم يبعد القمر.",
+        "واكتشفوا أن القمر يبتعد عن الأرض ببطء: حوالي 3.8 سنتيمتر كل سنة.",
+        "ما الشيء الذي تحب أن تقيسه في الفضاء؟"
+      ]
+    },
+    "years": "1969",
+    "media": [
+      "as11-40-5948"
+    ],
+    "video": true,
+    "sources": [
+      "https://www.jpl.nasa.gov/news/the-apollo-experiment-that-keeps-on-giving/",
+      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
+    ]
+  },
+  {
+    "id": "lrv",
+    "world": "moon",
+    "x": 205,
+    "y": 115,
+    "emoji": "🚙",
+    "year": 1971,
+    "status": "silent",
+    "a": 1,
+    "img": "images/lrv.jpg",
+    "nasaId": "as15-86-11603",
+    "credit": "NASA",
+    "src": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063C",
+    "en": {
+      "name": "Lunar Roving Vehicle",
+      "short": "Moon Car",
+      "place": "Hadley Rille (Apollo 15)",
+      "story": "Vroom! I'm the Lunar Roving Vehicle, a car that drove on the Moon! I was built to fold up and fit inside the lunar module. On Apollo 15 in 1971, astronauts drove me across the Moon. With me, they could explore much farther from their lander. Together we drove about 27.9 kilometers! Now three Moon cars are parked here, from Apollo 15, 16 and 17. And NASA's Lunar Reconnaissance Orbiter can still see our tire tracks from space! If you could drive on the Moon, where would you go?",
+      "science": "With a car, astronauts could explore <b>much farther</b> from their lander. On Apollo 15, we drove about <b>27.9 km</b>. Today, NASA's Lunar Reconnaissance Orbiter can still see our <b>tire tracks</b> from space!",
+      "q": "How many Moon cars did NASA leave on the Moon?",
+      "opts": [
+        "One",
+        "Three",
+        "Ten"
+      ],
+      "cap": "Astronaut James Irwin with the Lunar Roving Vehicle, Apollo 15, 1971",
+      "script": [
+        "Vroom! I'm the Lunar Roving Vehicle, a car that drove on the Moon!",
+        "I was built to fold up and fit inside the lunar module.",
+        "On Apollo 15 in 1971, astronauts drove me across the Moon.",
+        "With me, they could explore much farther from their lander.",
+        "Together we drove about 27.9 kilometers!",
+        "Now three Moon cars are parked here, from Apollo 15, 16 and 17.",
+        "And NASA's Lunar Reconnaissance Orbiter can still see our tire tracks from space!",
+        "If you could drive on the Moon, where would you go?"
+      ]
+    },
+    "ar": {
+      "name": "مركبة القمر الجوّالة",
+      "short": "سيارة القمر",
+      "place": "وادي هادلي (أبولو 15)",
+      "story": "برررم! أنا مركبة القمر الجوّالة، سيارة تجوّلت على القمر! صُنعت لأُطوى وأدخل داخل المركبة القمرية. في رحلة أبولو 15 سنة 1971 قادني رواد الفضاء على سطح القمر. ومعي استطاعوا أن يستكشفوا أماكن أبعد بكثير عن مركبتهم. قطعنا معًا حوالي 27.9 كيلومترًا! والآن ثلاث سيارات قمرية مركونة هنا، من أبولو 15 و16 و17. والمسبار المداري القمري التابع لناسا ما زال يرى آثار عجلاتنا من الفضاء! لو استطعت أن تقود سيارة على القمر، إلى أين ستذهب؟",
+      "science": "بالسيارة استطاع الرواد أن يستكشفوا أماكن <b>أبعد بكثير</b> عن مركبتهم. في رحلة أبولو 15 قطعنا حوالي <b>27.9 كيلومترًا</b>. واليوم ما زال المسبار المداري القمري التابع لناسا يرى <b>آثار عجلاتنا</b> من الفضاء!",
+      "q": "كم سيارة قمرية تركت ناسا على القمر؟",
+      "opts": [
+        "واحدة",
+        "ثلاث",
+        "عشر"
+      ],
+      "cap": "رائد الفضاء جيمس إروين مع مركبة القمر الجوّالة، أبولو 15، سنة 1971",
+      "script": [
+        "برررم! أنا مركبة القمر الجوّالة، سيارة تجوّلت على القمر!",
+        "صُنعت لأُطوى وأدخل داخل المركبة القمرية.",
+        "في رحلة أبولو 15 سنة 1971 قادني رواد الفضاء على سطح القمر.",
+        "ومعي استطاعوا أن يستكشفوا أماكن أبعد بكثير عن مركبتهم.",
+        "قطعنا معًا حوالي 27.9 كيلومترًا!",
+        "والآن ثلاث سيارات قمرية مركونة هنا، من أبولو 15 و16 و17.",
+        "والمسبار المداري القمري التابع لناسا ما زال يرى آثار عجلاتنا من الفضاء!",
+        "لو استطعت أن تقود سيارة على القمر، إلى أين ستذهب؟"
+      ]
+    },
+    "years": "1971–1972",
+    "media": [
+      "as15-86-11603",
+      "7021093",
+      "as15-88-11901",
+      "as16-110-17960",
+      "as17-147-22527",
+      "lroc-a15-tracks"
+    ],
+    "video": true,
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063C",
+      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C",
+      "https://images.nasa.gov/details/7021093",
+      "https://lroc.im-ldi.com/images/491"
+    ]
+  },
+  {
+    "id": "sv3",
+    "world": "moon",
+    "x": 165,
+    "y": 228,
+    "emoji": "🛰️",
+    "year": 1967,
+    "status": "silent",
+    "a": 0,
+    "img": "images/sv3.jpg",
+    "nasaId": "AS12-48-7134",
+    "credit": "NASA",
+    "src": "https://science.nasa.gov/mission/surveyor-3/",
+    "en": {
+      "name": "Surveyor 3",
+      "short": "Surveyor 3",
+      "place": "Ocean of Storms",
+      "story": "I landed on the Moon in 1967, before any human walked there! I'm Surveyor 3. My job was to test the lunar ground. My tests showed the surface was solid enough to hold a lunar module. Then, in November 1969, Apollo 12 landed about 180 meters away from me! The astronauts walked over to visit. They took my camera and scoop back to Earth, so scientists could study how the Moon had changed them. Can you imagine getting visitors on the Moon?",
+      "science": "My sampling tests showed the lunar surface was <b>solid enough to hold a lunar module</b>, a key step before sending people. Apollo 12 astronauts brought my <b>camera and scoop</b> back to Earth, so scientists could study the effects of <b>nearly two and a half years</b> on the Moon.",
+      "q": "Who came to visit Surveyor 3 on the Moon?",
+      "opts": [
+        "Apollo 12 astronauts",
+        "A Mars rover",
+        "Nobody, ever"
+      ],
+      "cap": "Apollo 12 astronaut Alan Bean next to Surveyor 3, November 1969",
+      "script": [
+        "I landed on the Moon in 1967, before any human walked there!",
+        "I'm Surveyor 3.",
+        "My job was to test the lunar ground.",
+        "My tests showed the surface was solid enough to hold a lunar module.",
+        "Then, in November 1969, Apollo 12 landed about 180 meters away from me!",
+        "The astronauts walked over to visit.",
+        "They took my camera and scoop back to Earth, so scientists could study how the Moon had changed them.",
+        "Can you imagine getting visitors on the Moon?"
+      ]
+    },
+    "ar": {
+      "name": "سيرفيور 3",
+      "short": "سيرفيور 3",
+      "place": "محيط العواصف",
+      "story": "هبطت على القمر سنة 1967، قبل أن يمشي عليه أي إنسان! أنا سيرفيور 3. كانت مهمتي أن أختبر أرض القمر. وأظهرت اختباراتي أن السطح صلب بما يكفي ليحمل مركبة قمرية. ثم في تشرين الثاني 1969 هبطت أبولو 12 على بُعد حوالي 180 مترًا مني! ومشى الرواد لزيارتي. وأخذوا الكاميرا والمجرفة الخاصة بي إلى الأرض، ليدرس العلماء كيف غيّرها القمر. هل تتخيّل أن يزورك أحد على القمر؟",
+      "science": "أظهرت اختبارات أخذ العيّنات التي قمت بها أن سطح القمر <b>صلب بما يكفي ليحمل مركبة قمرية</b>، وهذه خطوة مهمة قبل إرسال البشر. وأعاد رواد أبولو 12 <b>الكاميرا والمجرفة</b> إلى الأرض، ليدرس العلماء أثر <b>قرابة سنتين ونصف</b> على القمر.",
+      "q": "من جاء لزيارة سيرفيور 3 على القمر؟",
+      "opts": [
+        "رواد أبولو 12",
+        "مركبة من المريخ",
+        "لم يزره أحد أبدًا"
+      ],
+      "cap": "رائد أبولو 12 آلن بين بجانب سيرفيور 3، تشرين الثاني 1969",
+      "script": [
+        "هبطت على القمر سنة 1967، قبل أن يمشي عليه أي إنسان!",
+        "أنا سيرفيور 3.",
+        "كانت مهمتي أن أختبر أرض القمر.",
+        "وأظهرت اختباراتي أن السطح صلب بما يكفي ليحمل مركبة قمرية.",
+        "ثم في تشرين الثاني 1969 هبطت أبولو 12 على بُعد حوالي 180 مترًا مني!",
+        "ومشى الرواد لزيارتي.",
+        "وأخذوا الكاميرا والمجرفة الخاصة بي إلى الأرض، ليدرس العلماء كيف غيّرها القمر.",
+        "هل تتخيّل أن يزورك أحد على القمر؟"
+      ]
+    },
+    "sources": [
+      "https://science.nasa.gov/mission/surveyor-3/"
+    ],
+    "years": "1967",
+    "media": [
+      "as12-48-7121",
+      "as12-48-7110",
+      "AS12-48-7133",
+      "AS12-48-7134"
+    ],
+    "video": true
+  },
+  {
+    "id": "seis",
+    "world": "moon",
+    "x": 345,
+    "y": 258,
+    "emoji": "📈",
+    "year": 1969,
+    "status": "silent",
+    "a": 1,
+    "img": "images/seis.jpg",
+    "nasaId": "as11-40-5942",
+    "credit": "NASA",
+    "src": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-099C",
+    "en": {
+      "name": "Apollo Seismometers",
+      "short": "Seismometers",
+      "place": "Apollo 11, 12, 14, 15 and 16 sites",
+      "story": "Shhh... I'm listening to the Moon! We're the Apollo seismometers, super-sensitive listeners. Astronauts set us up at their landing sites, starting with Apollo 11 in 1969. Every day, we felt for tiny shakes in the ground. And we found them: moonquakes! We even recorded the first artificial moonquake. The stations from Apollo 12, 14, 15 and 16 kept listening until September 30, 1977. Our recordings helped scientists study the Moon's crust and interior. What do you think makes the Moon shake?",
+      "science": "We recorded <b>moonquakes</b>, and even the <b>first artificial moonquake</b> ever recorded. Our data helped scientists study the Moon's <b>crust and interior</b>. The Apollo 12, 14, 15 and 16 stations worked until <b>30 September 1977</b>.",
+      "q": "What did the Apollo seismometers detect?",
+      "opts": [
+        "Moon music",
+        "Moonquakes",
+        "Alien footsteps"
+      ],
+      "cap": "Buzz Aldrin carrying Apollo 11 science experiments, July 1969",
+      "script": [
+        "Shhh... I'm listening to the Moon!",
+        "We're the Apollo seismometers, super-sensitive listeners.",
+        "Astronauts set us up at their landing sites, starting with Apollo 11 in 1969.",
+        "Every day, we felt for tiny shakes in the ground.",
+        "And we found them: moonquakes!",
+        "We even recorded the first artificial moonquake.",
+        "The stations from Apollo 12, 14, 15 and 16 kept listening until September 30, 1977.",
+        "Our recordings helped scientists study the Moon's crust and interior.",
+        "What do you think makes the Moon shake?"
+      ]
+    },
+    "ar": {
+      "name": "أجهزة رصد الزلازل من أبولو",
+      "short": "أجهزة الزلازل",
+      "place": "مواقع أبولو 11 و12 و14 و15 و16",
+      "story": "هسسس… أنا أستمع إلى القمر! نحن أجهزة رصد الزلازل من أبولو، مستمعون حسّاسون جدًا. وضعنا الرواد في أماكن هبوطهم، بدءًا من أبولو 11 سنة 1969. كل يوم كنا نتحسّس أي اهتزاز صغير في الأرض. ووجدناها: زلازل القمر! بل وسجّلنا أول زلزال قمري صناعي. واستمرت محطات أبولو 12 و14 و15 و16 في الاستماع حتى 30 أيلول 1977. وساعدت تسجيلاتنا العلماء على دراسة قشرة القمر وباطنه. برأيك، ما الذي يجعل القمر يهتز؟",
+      "science": "سجّلنا <b>زلازل القمر</b>، وسجّلنا أيضًا <b>أول زلزال قمري صناعي</b>. وساعدت بياناتنا العلماء على دراسة <b>قشرة القمر وباطنه</b>. وعملت محطات أبولو 12 و14 و15 و16 حتى <b>30 أيلول 1977</b>.",
+      "q": "ماذا رصدت أجهزة الزلازل من أبولو؟",
+      "opts": [
+        "موسيقى القمر",
+        "زلازل القمر",
+        "خطوات كائنات فضائية"
+      ],
+      "cap": "باز ألدرين يحمل تجارب أبولو 11 العلمية، تموز 1969",
+      "script": [
+        "هسسس… أنا أستمع إلى القمر!",
+        "نحن أجهزة رصد الزلازل من أبولو، مستمعون حسّاسون جدًا.",
+        "وضعنا الرواد في أماكن هبوطهم، بدءًا من أبولو 11 سنة 1969.",
+        "كل يوم كنا نتحسّس أي اهتزاز صغير في الأرض.",
+        "ووجدناها: زلازل القمر!",
+        "بل وسجّلنا أول زلزال قمري صناعي.",
+        "واستمرت محطات أبولو 12 و14 و15 و16 في الاستماع حتى 30 أيلول 1977.",
+        "وساعدت تسجيلاتنا العلماء على دراسة قشرة القمر وباطنه.",
+        "برأيك، ما الذي يجعل القمر يهتز؟"
+      ]
+    },
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-099C",
+      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
+    ],
+    "years": "1969–1977",
+    "media": [
+      "as16-113-18347",
+      "as11-40-5942",
+      "as12-47-6918",
+      "S69-39587"
+    ],
+    "video": true
+  },
+  {
+    "id": "lm",
+    "world": "moon",
+    "x": 262,
+    "y": 222,
+    "emoji": "🦅",
+    "year": 1969,
+    "status": "silent",
+    "a": 0,
+    "nasaId": "as11-40-5948",
+    "credit": "NASA",
+    "src": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C",
+    "en": {
+      "name": "Apollo 11 Lunar Module \"Eagle\"",
+      "short": "Eagle",
+      "place": "Sea of Tranquility",
+      "story": "I helped the first people ever land on another world! I'm the bottom half of Eagle, Apollo 11's lunar module. On July 20, 1969, I carried Neil Armstrong and Buzz Aldrin down to the Moon's Sea of Tranquility. Near me, they set up a seismometer and a laser reflector. When it was time to go home, I became the launch platform for my top half, and I was left behind. I'm still on the Moon today. If you landed on the Moon, what would you do first?",
+      "science": "Eagle's landing was the <b>first time humans landed on another world</b>. Near me, the astronauts set up a <b>seismometer</b> and the <b>laser reflector</b> that scientists still use today.",
+      "q": "What did Eagle's bottom half do when the astronauts left?",
+      "opts": [
+        "It became a launch pad for their trip home",
+        "It drove around the Moon",
+        "It flew back to Earth"
+      ],
+      "cap": "Eagle (in the background) at Tranquility Base, with Buzz Aldrin, July 1969",
+      "script": [
+        "I helped the first people ever land on another world!",
+        "I'm the bottom half of Eagle, Apollo 11's lunar module.",
+        "On July 20, 1969, I carried Neil Armstrong and Buzz Aldrin down to the Moon's Sea of Tranquility.",
+        "Near me, they set up a seismometer and a laser reflector.",
+        "When it was time to go home, I became the launch platform for my top half, and I was left behind.",
+        "I'm still on the Moon today.",
+        "If you landed on the Moon, what would you do first?"
+      ]
+    },
+    "ar": {
+      "name": "المركبة القمرية \"النسر\" من أبولو 11",
+      "short": "النسر",
+      "place": "بحر الهدوء",
+      "story": "ساعدت أول بشر في التاريخ على الهبوط على عالم آخر! أنا النصف السفلي من «النسر»، المركبة القمرية لأبولو 11. في 20 تموز 1969 أنزلت نيل أرمسترونغ وباز ألدرين إلى بحر الهدوء على القمر. وبالقرب مني وضعا جهازًا لرصد الزلازل وعاكسًا لليزر. وعندما حان وقت العودة، صرت منصّة لإطلاق نصفي العلوي، وبقيت أنا هنا. وما زلت على القمر حتى اليوم. لو هبطت على القمر، ماذا ستفعل أولًا؟",
+      "science": "كان هبوط «النسر» <b>أول مرة يهبط فيها بشر على عالم آخر</b>. وبالقرب مني وضع الرواد <b>جهازًا لرصد الزلازل</b> و<b>عاكس الليزر</b> الذي ما زال العلماء يستعملونه حتى اليوم.",
+      "q": "ماذا فعل النصف السفلي من \"النسر\" عندما غادر الرواد؟",
+      "opts": [
+        "أصبح منصة إطلاق لرحلة عودتهم",
+        "تجوّل على سطح القمر",
+        "طار عائدًا إلى الأرض"
+      ],
+      "cap": "\"النسر\" في الخلف في قاعدة الهدوء، مع باز ألدرين، تموز 1969",
+      "script": [
+        "ساعدت أول بشر في التاريخ على الهبوط على عالم آخر!",
+        "أنا النصف السفلي من «النسر»، المركبة القمرية لأبولو 11.",
+        "في 20 تموز 1969 أنزلت نيل أرمسترونغ وباز ألدرين إلى بحر الهدوء على القمر.",
+        "وبالقرب مني وضعا جهازًا لرصد الزلازل وعاكسًا لليزر.",
+        "وعندما حان وقت العودة، صرت منصّة لإطلاق نصفي العلوي، وبقيت أنا هنا.",
+        "وما زلت على القمر حتى اليوم.",
+        "لو هبطت على القمر، ماذا ستفعل أولًا؟"
+      ]
+    },
+    "img": "images/rr.jpg",
+    "sources": [
+      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
+    ],
+    "years": "1969",
+    "media": [
+      "as11-40-5927",
+      "as11-40-5903",
+      "as11-40-5948",
+      "as11-44-6642"
+    ],
+    "video": true
+  },
+  {
+    "id": "vik",
+    "world": "mars",
+    "x": 175,
+    "y": 140,
+    "emoji": "🦿",
+    "year": 1976,
+    "status": "silent",
+    "a": 0,
+    "img": "images/vik.jpg",
+    "nasaId": "PIA00563",
+    "credit": "NASA/JPL",
+    "src": "https://science.nasa.gov/mission/viking-1/",
+    "en": {
+      "name": "Viking 1 Lander",
+      "short": "Viking 1",
+      "place": "Chryse Planitia",
+      "story": "Click! I sent back the very first pictures from the surface of Mars! I'm the Viking 1 Lander. On July 20, 1976, I made NASA's first successful landing on Mars. Every day, I sent weather reports home. With my robot arm, I scooped up soil and tested it for signs of life. One test looked hopeful, but the main test found no organic compounds. I kept working for more than six years, until November 1982. Do you think Mars was ever home to life?",
+      "science": "I sent the <b>first pictures from the surface of Mars</b> and years of <b>weather reports</b>. I tested the soil for life: one test looked hopeful, but the main test found <b>no organic compounds</b>. Scientists are still asking whether Mars was ever <b>home to life</b>.",
+      "q": "What was special about Viking 1?",
+      "opts": [
+        "First NASA spacecraft to land safely on Mars",
+        "First rover on the Moon",
+        "It brought rocks back to Earth"
+      ],
+      "cap": "The first color image from Viking Lander 1 on Mars, July 1976",
+      "script": [
+        "Click!",
+        "I sent back the very first pictures from the surface of Mars!",
+        "I'm the Viking 1 Lander.",
+        "On July 20, 1976, I made NASA's first successful landing on Mars.",
+        "Every day, I sent weather reports home.",
+        "With my robot arm, I scooped up soil and tested it for signs of life.",
+        "One test looked hopeful, but the main test found no organic compounds.",
+        "I kept working for more than six years, until November 1982.",
+        "Do you think Mars was ever home to life?"
+      ]
+    },
+    "ar": {
+      "name": "مسبار فايكنغ 1",
+      "short": "فايكنغ 1",
+      "place": "سهل كريس",
+      "story": "كليك! أرسلت أول صور على الإطلاق من سطح المريخ! أنا مسبار فايكنغ 1. في 20 تموز 1976 قمت بأول هبوط ناجح لناسا على المريخ. كل يوم كنت أرسل تقارير عن الطقس. وبذراعي الآلية جرفت التربة واختبرتها بحثًا عن علامات حياة. أحد الاختبارات بدا مبشّرًا، لكن الاختبار الرئيسي لم يجد مركّبات عضوية. وواصلت العمل أكثر من ست سنوات، حتى تشرين الثاني 1982. برأيك، هل كان المريخ يومًا موطنًا للحياة؟",
+      "science": "أرسلت <b>أول صور من سطح المريخ</b> وتقارير <b>عن الطقس</b> لسنوات. واختبرت التربة بحثًا عن حياة: أحد الاختبارات بدا مبشّرًا، لكن الاختبار الرئيسي <b>لم يجد مركّبات عضوية</b>. وما زال العلماء يسألون: هل كان المريخ يومًا <b>موطنًا للحياة</b>؟",
+      "q": "ما الشيء المميز في فايكنغ 1؟",
+      "opts": [
+        "أول مركبة لناسا تهبط بأمان على المريخ",
+        "أول عربة على القمر",
+        "أعاد صخورًا إلى الأرض"
+      ],
+      "cap": "أول صورة ملوّنة من فايكنغ 1 على المريخ، تموز 1976",
+      "script": [
+        "كليك!",
+        "أرسلت أول صور على الإطلاق من سطح المريخ!",
+        "أنا مسبار فايكنغ 1.",
+        "في 20 تموز 1976 قمت بأول هبوط ناجح لناسا على المريخ.",
+        "كل يوم كنت أرسل تقارير عن الطقس.",
+        "وبذراعي الآلية جرفت التربة واختبرتها بحثًا عن علامات حياة.",
+        "أحد الاختبارات بدا مبشّرًا، لكن الاختبار الرئيسي لم يجد مركّبات عضوية.",
+        "وواصلت العمل أكثر من ست سنوات، حتى تشرين الثاني 1982.",
+        "برأيك، هل كان المريخ يومًا موطنًا للحياة؟"
+      ]
+    },
+    "sources": [
+      "https://science.nasa.gov/mission/viking-1/"
+    ],
+    "years": "1976–1982",
+    "media": [
+      "PIA00381",
+      "PIA09703",
+      "PIA00563"
+    ],
+    "video": true
+  },
+  {
+    "id": "soj",
+    "world": "mars",
+    "x": 250,
+    "y": 178,
+    "emoji": "🧸",
+    "year": 1997,
+    "status": "silent",
+    "a": 0,
+    "img": "images/soj.jpg",
+    "nasaId": "PIA04318",
+    "credit": "NASA/JPL-Caltech",
+    "src": "https://science.nasa.gov/mission/mars-pathfinder/",
+    "en": {
+      "name": "Sojourner",
+      "short": "Sojourner",
+      "place": "Ares Vallis",
+      "story": "I was the very first robot rover on another planet, and I was only about 30 centimeters tall, the length of a school ruler! I'm Sojourner. My lander, Pathfinder, touched down on Mars on July 4, 1997. The next day, I stood up and rolled down a ramp onto the red ground. Every day, I drove slowly to the rocks to study them. Together, we sent home 16,500 lander pictures and 550 of mine! If you had a tiny rover, where would you send it?",
+      "science": "Pathfinder showed a <b>new way to land safely</b> on Mars, and I was the <b>first robot rover</b> there. We studied Mars' rocks, soil and weather, and sent back more than <b>16,500 lander images</b> and <b>550 rover images</b>.",
+      "q": "How tall was Sojourner when it stood up?",
+      "opts": [
+        "About 30 cm, like a school ruler",
+        "As tall as a house",
+        "As tall as a bus"
+      ],
+      "cap": "Sojourner on Mars, photographed by the Pathfinder lander, 1997",
+      "script": [
+        "I was the very first robot rover on another planet, and I was only about 30 centimeters tall, the length of a school ruler!",
+        "I'm Sojourner.",
+        "My lander, Pathfinder, touched down on Mars on July 4, 1997.",
+        "The next day, I stood up and rolled down a ramp onto the red ground.",
+        "Every day, I drove slowly to the rocks to study them.",
+        "Together, we sent home 16,500 lander pictures and 550 of mine!",
+        "If you had a tiny rover, where would you send it?"
+      ]
+    },
+    "ar": {
+      "name": "سوجورنر",
+      "short": "سوجورنر",
+      "place": "وادي آريس",
+      "story": "كنت أول عربة آلية على كوكب آخر، وكان طولي حوالي 30 سنتيمترًا فقط، بطول مسطرة المدرسة! أنا سوجورنر. هبط مسباري باثفايندر على المريخ في 4 تموز 1997. وفي اليوم التالي وقفت ونزلت على منحدر إلى الأرض الحمراء. كل يوم كنت أتحرك ببطء نحو الصخور لأدرسها. ومعًا أرسلنا إلى الأرض 16,500 صورة من المسبار و550 صورة مني! لو كانت عندك عربة صغيرة، إلى أين سترسلها؟",
+      "science": "أظهر باثفايندر <b>طريقة جديدة للهبوط بأمان</b> على المريخ، وكنت أنا <b>أول عربة آلية</b> هناك. درسنا صخور المريخ وتربته وطقسه، وأرسلنا أكثر من <b>16,500 صورة من المسبار</b> و<b>550 صورة من العربة</b>.",
+      "q": "كم كان طول سوجورنر عندما وقفت؟",
+      "opts": [
+        "حوالي 30 سم، مثل مسطرة المدرسة",
+        "بطول بيت",
+        "بطول حافلة"
+      ],
+      "cap": "سوجورنر على المريخ كما صوّرها مسبار باثفايندر، 1997",
+      "script": [
+        "كنت أول عربة آلية على كوكب آخر، وكان طولي حوالي 30 سنتيمترًا فقط، بطول مسطرة المدرسة!",
+        "أنا سوجورنر.",
+        "هبط مسباري باثفايندر على المريخ في 4 تموز 1997.",
+        "وفي اليوم التالي وقفت ونزلت على منحدر إلى الأرض الحمراء.",
+        "كل يوم كنت أتحرك ببطء نحو الصخور لأدرسها.",
+        "ومعًا أرسلنا إلى الأرض 16,500 صورة من المسبار و550 صورة مني!",
+        "لو كانت عندك عربة صغيرة، إلى أين سترسلها؟"
+      ]
+    },
+    "sources": [
+      "https://science.nasa.gov/mission/mars-pathfinder/"
+    ],
+    "years": "1997",
+    "media": [
+      "PIA00766",
+      "PIA01121",
+      "PIA00633",
+      "PIA04318"
+    ],
+    "video": true
+  },
+  {
+    "id": "spi",
+    "world": "mars",
+    "x": 115,
+    "y": 250,
+    "emoji": "🛞",
+    "year": 2004,
+    "status": "silent",
+    "a": 0,
+    "img": "images/spi.jpg",
+    "nasaId": "PIA04928",
+    "credit": "NASA/JPL/Cornell University/Maas Digital (artist's concept)",
+    "src": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/",
+    "en": {
+      "name": "Spirit",
+      "short": "Spirit",
+      "place": "Gusev Crater",
+      "story": "A broken wheel helped me make my biggest discovery! I'm Spirit, Opportunity's twin rover. I landed in Gusev Crater on Mars in 2004. Every day, I drove across the crater, studying rocks and soil. Then one of my six wheels stopped turning. So I dragged it through the soil, leaving a deep track. Because of that, I uncovered bright soil that was about 90% silica! Scientists think it could have come from a hot spring or from steam. Have you ever turned a problem into a discovery?",
+      "science": "My stuck wheel dug up bright soil that was <b>about 90% silica</b>. Scientists think it could have come from water in a <b>hot spring</b>, or from <b>steam</b>.",
+      "q": "How did Spirit make a big discovery?",
+      "opts": [
+        "Its stuck wheel scraped open the soil",
+        "It found a lake",
+        "It heard a marsquake"
+      ],
+      "cap": "Artist's concept of a Mars Exploration Rover like Spirit",
+      "script": [
+        "A broken wheel helped me make my biggest discovery!",
+        "I'm Spirit, Opportunity's twin rover.",
+        "I landed in Gusev Crater on Mars in 2004.",
+        "Every day, I drove across the crater, studying rocks and soil.",
+        "Then one of my six wheels stopped turning.",
+        "So I dragged it through the soil, leaving a deep track.",
+        "Because of that, I uncovered bright soil that was about 90% silica!",
+        "Scientists think it could have come from a hot spring or from steam.",
+        "Have you ever turned a problem into a discovery?"
+      ]
+    },
+    "ar": {
+      "name": "سبيريت",
+      "short": "سبيريت",
+      "place": "فوهة غوسيف",
+      "story": "عجلة معطّلة ساعدتني على أكبر اكتشافاتي! أنا سبيريت، توأم أوبورتيونيتي. هبطت في فوهة غوسيف على المريخ سنة 2004. كل يوم كنت أتجوّل في الفوهة وأدرس الصخور والتربة. ثم توقفت إحدى عجلاتي الست عن الدوران. فصرت أسحبها في التربة، فتترك أثرًا عميقًا. وبسبب ذلك كشفت تربة لامعة فيها حوالي 90% سيليكا! ويعتقد العلماء أنها ربما تكوّنت من ماء في ينبوع ساخن، أو من البخار. هل حوّلت يومًا مشكلة إلى اكتشاف؟",
+      "science": "عجلتي العالقة كشفت تربة لامعة فيها <b>حوالي 90% سيليكا</b>. ويعتقد العلماء أنها ربما تكوّنت من ماء في <b>ينبوع ساخن</b>، أو من <b>البخار</b>.",
+      "q": "كيف حققت سبيريت اكتشافًا كبيرًا؟",
+      "opts": [
+        "عجلتها العالقة حفرت التربة",
+        "وجدت بحيرة",
+        "سمعت زلزالًا على المريخ"
+      ],
+      "cap": "رسم فني لعربة استكشاف المريخ مثل سبيريت",
+      "script": [
+        "عجلة معطّلة ساعدتني على أكبر اكتشافاتي!",
+        "أنا سبيريت، توأم أوبورتيونيتي.",
+        "هبطت في فوهة غوسيف على المريخ سنة 2004.",
+        "كل يوم كنت أتجوّل في الفوهة وأدرس الصخور والتربة.",
+        "ثم توقفت إحدى عجلاتي الست عن الدوران.",
+        "فصرت أسحبها في التربة، فتترك أثرًا عميقًا.",
+        "وبسبب ذلك كشفت تربة لامعة فيها حوالي 90% سيليكا!",
+        "ويعتقد العلماء أنها ربما تكوّنت من ماء في ينبوع ساخن، أو من البخار.",
+        "هل حوّلت يومًا مشكلة إلى اكتشاف؟"
+      ]
+    },
+    "sources": [
+      "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/",
+      "https://science.nasa.gov/photojournal/silica-rich-soil-found-by-spirit/"
+    ],
+    "years": "2004–2011",
+    "media": [
+      "PIA04928",
+      "PIA05283",
+      "PIA09491"
+    ],
+    "video": true
+  },
+  {
+    "id": "opp",
+    "world": "mars",
+    "x": 300,
+    "y": 252,
+    "emoji": "🔭",
+    "year": 2004,
+    "status": "silent",
+    "a": 2,
+    "img": "images/opp.jpg",
+    "nasaId": "PIA17759",
+    "credit": "NASA/JPL-Caltech/Cornell Univ./Arizona State Univ.",
+    "src": "https://science.nasa.gov/mission/mer-opportunity/",
+    "years": "2004–2019",
+    "video": true,
+    "media": [
+      "PIA17759",
+      "PIA04413",
+      "PIA23178",
+      "PIA05273",
+      "PIA18885",
+      "PIA22329"
+    ],
+    "en": {
+      "name": "Opportunity",
+      "short": "Opportunity",
+      "place": "Meridiani Planum",
+      "script": [
+        "I'm Opportunity, and I was supposed to work for only 90 Martian days!",
+        "Every day, I looked for clues about water.",
+        "One day, I found tiny round rocks nicknamed \"blueberries.\"",
+        "They were clues that this place was wet long ago!",
+        "I kept going for almost 15 years and about 45 kilometers, longer than a marathon!",
+        "In June 2018, a dust storm covered Mars, and I fell silent.",
+        "Now we know Mars may once have been able to support tiny life.",
+        "What do you think we'll find on Mars next?"
+      ],
+      "story": "I'm Opportunity, and I was supposed to work for only 90 Martian days! Every day, I looked for clues about water. One day, I found tiny round rocks nicknamed \"blueberries.\" They were clues that this place was wet long ago! I kept going for almost 15 years and about 45 kilometers, longer than a marathon! In June 2018, a dust storm covered Mars, and I fell silent. Now we know Mars may once have been able to support tiny life. What do you think we'll find on Mars next?",
+      "science": "The tiny round <b>\"blueberries\"</b> I found were clues that this place was <b>wet long ago</b>. Now we know Mars <b>may once have been able to support tiny life</b>. That doesn't mean life was found: it means Mars may once have had the right conditions.",
+      "q": "Opportunity was planned to work for 90 Martian days. How long did it really work?",
+      "opts": [
+        "Exactly 90 Martian days",
+        "About 1 year",
+        "Almost 15 years"
+      ],
+      "cap": "Opportunity's self-portrait on Mars, January 2014"
+    },
+    "ar": {
+      "name": "أوبورتيونيتي",
+      "short": "أوبورتيونيتي",
+      "place": "سهل ميريدياني",
+      "script": [
+        "أنا أوبورتيونيتي، وكان من المفروض أن أعمل 90 يومًا مريخيًا فقط!",
+        "كل يوم كنت أبحث عن أدلة على وجود الماء.",
+        "وذات يوم وجدت حصى صغيرة مستديرة سمّاها العلماء «حبات التوت الأزرق».",
+        "كانت دليلًا على أن هذا المكان كان فيه ماء منذ زمن بعيد!",
+        "فواصلت طريقي قرابة 15 سنة، وقطعت حوالي 45 كيلومترًا، أطول من سباق ماراثون!",
+        "وفي حزيران 2018 غطّت عاصفة غبار المريخ كله، فصمتُّ.",
+        "والآن نعرف أن المريخ ربما كان قادرًا يومًا ما على دعم حياة صغيرة جدًا.",
+        "برأيك، ماذا سنكتشف على المريخ في المرة القادمة؟"
+      ],
+      "story": "أنا أوبورتيونيتي، وكان من المفروض أن أعمل 90 يومًا مريخيًا فقط! كل يوم كنت أبحث عن أدلة على وجود الماء. وذات يوم وجدت حصى صغيرة مستديرة سمّاها العلماء «حبات التوت الأزرق». كانت دليلًا على أن هذا المكان كان فيه ماء منذ زمن بعيد! فواصلت طريقي قرابة 15 سنة، وقطعت حوالي 45 كيلومترًا، أطول من سباق ماراثون! وفي حزيران 2018 غطّت عاصفة غبار المريخ كله، فصمتُّ. والآن نعرف أن المريخ ربما كان قادرًا يومًا ما على دعم حياة صغيرة جدًا. برأيك، ماذا سنكتشف على المريخ في المرة القادمة؟",
+      "science": "حبات <b>«التوت الأزرق»</b> الصغيرة التي وجدتها كانت دليلًا على أن هذا المكان <b>كان فيه ماء منذ زمن بعيد</b>. والآن نعرف أن المريخ <b>ربما كان قادرًا يومًا ما على دعم حياة صغيرة جدًا</b>. هذا لا يعني أننا وجدنا حياة، بل يعني أن الظروف على المريخ ربما كانت مناسبة لها يومًا ما.",
+      "q": "خُطط لأوبورتيونيتي أن تعمل 90 يومًا مريخيًا. كم عملت فعلًا؟",
+      "opts": [
+        "90 يومًا مريخيًا بالضبط",
+        "سنة تقريبًا",
+        "قرابة 15 سنة"
+      ],
+      "cap": "صورة ذاتية لأوبورتيونيتي على المريخ، كانون الثاني 2014"
+    },
+    "sources": [
+      "https://science.nasa.gov/mission/mer-opportunity/",
+      "https://www.nasa.gov/news-release/nasas-record-setting-opportunity-rover-mission-on-mars-comes-to-end/",
+      "https://images.nasa.gov/details/PIA18885"
+    ]
+  },
+  {
+    "id": "ins",
+    "world": "mars",
+    "x": 210,
+    "y": 218,
+    "emoji": "🎧",
+    "year": 2018,
+    "status": "silent",
+    "a": 0,
+    "img": "images/ins.jpg",
+    "nasaId": "PIA25287",
+    "credit": "NASA/JPL-Caltech",
+    "src": "https://science.nasa.gov/mission/insight/",
+    "en": {
+      "name": "InSight",
+      "short": "InSight",
+      "place": "Elysium Planitia",
+      "story": "I never drove anywhere. I just listened to Mars! I'm InSight, a lander. I launched in 2018 and set a super-sensitive seismometer on the ground. Every day, I felt for tiny shakes. And Mars rumbled: I detected 1,319 marsquakes! Because of that, scientists could study Mars' crust, mantle and core. Slowly, dust covered my solar panels, and my power faded until my mission ended in 2022. What do you think is deep inside Mars?",
+      "science": "My seismometer detected <b>1,319 marsquakes</b>. Their signals gave scientists a way to study Mars' <b>crust, mantle and core</b>.",
+      "q": "What did InSight study?",
+      "opts": [
+        "Marsquakes and Mars' insides",
+        "Mars' moons",
+        "The Sun"
+      ],
+      "cap": "InSight's final selfie, covered in dust, April 2022",
+      "script": [
+        "I never drove anywhere. I just listened to Mars!",
+        "I'm InSight, a lander.",
+        "I launched in 2018 and set a super-sensitive seismometer on the ground.",
+        "Every day, I felt for tiny shakes.",
+        "And Mars rumbled: I detected 1,319 marsquakes!",
+        "Because of that, scientists could study Mars' crust, mantle and core.",
+        "Slowly, dust covered my solar panels, and my power faded until my mission ended in 2022.",
+        "What do you think is deep inside Mars?"
+      ]
+    },
+    "ar": {
+      "name": "إنسايت",
+      "short": "إنسايت",
+      "place": "سهل إليسيوم",
+      "story": "لم أتجوّل في أي مكان، بل استمعت إلى المريخ! أنا إنسايت، مسبار هبوط. انطلقت سنة 2018 ووضعت جهازًا حسّاسًا جدًا لرصد الزلازل على الأرض. كل يوم كنت أتحسّس أي اهتزاز صغير. وارتجف المريخ: رصدت 1,319 زلزالًا! وبفضل ذلك استطاع العلماء دراسة قشرة المريخ ووشاحه ولبّه. وببطء غطّى الغبار ألواحي الشمسية، وضعفت طاقتي حتى انتهت مهمتي سنة 2022. برأيك، ماذا يوجد في أعماق المريخ؟",
+      "science": "رصد جهازي <b>1,319 زلزالًا على المريخ</b>. وأعطت إشاراتها العلماء طريقة لدراسة <b>قشرة المريخ ووشاحه ولبّه</b>.",
+      "q": "ماذا درس إنسايت؟",
+      "opts": [
+        "زلازل المريخ وما في داخله",
+        "أقمار المريخ",
+        "الشمس"
+      ],
+      "cap": "آخر صورة ذاتية لإنسايت وهو مغطّى بالغبار، نيسان 2022",
+      "script": [
+        "لم أتجوّل في أي مكان، بل استمعت إلى المريخ!",
+        "أنا إنسايت، مسبار هبوط.",
+        "انطلقت سنة 2018 ووضعت جهازًا حسّاسًا جدًا لرصد الزلازل على الأرض.",
+        "كل يوم كنت أتحسّس أي اهتزاز صغير.",
+        "وارتجف المريخ: رصدت 1,319 زلزالًا!",
+        "وبفضل ذلك استطاع العلماء دراسة قشرة المريخ ووشاحه ولبّه.",
+        "وببطء غطّى الغبار ألواحي الشمسية، وضعفت طاقتي حتى انتهت مهمتي سنة 2022.",
+        "برأيك، ماذا يوجد في أعماق المريخ؟"
+      ]
+    },
+    "sources": [
+      "https://science.nasa.gov/mission/insight/",
+      "https://www.jpl.nasa.gov/news/nasa-retires-insight-mars-lander-mission-after-years-of-science"
+    ],
+    "years": "2018–2022",
+    "media": [
+      "PIA22876",
+      "PIA22977",
+      "PIA25286",
+      "PIA25287"
+    ],
+    "video": true
+  },
+  {
+    "id": "ing",
+    "world": "mars",
+    "x": 330,
+    "y": 150,
+    "emoji": "🚁",
+    "year": 2021,
+    "status": "silent",
+    "a": 1,
+    "img": "images/ing.jpg",
+    "nasaId": "PIA23882",
+    "credit": "NASA/JPL-Caltech",
+    "src": "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/",
+    "en": {
+      "name": "Ingenuity",
+      "short": "Ingenuity",
+      "place": "Jezero Crater",
+      "story": "I was designed for only 5 flights, but I flew 72 times! I'm Ingenuity, a tiny helicopter on Mars. Mars' air is less than 1% as thick as Earth's, so flying there is hard. On April 19, 2021, I made the first powered flight on another planet! I kept flying for nearly 3 years, higher and faster than expected. In January 2024, my rotor blades were damaged, and I landed for the last time. Now we know flying on Mars is possible. What would you explore with a Mars helicopter?",
+      "science": "Mars' air is <b>less than 1% as thick as Earth's</b>, so flying there is hard. On April 19, 2021, I made the <b>first powered flight on another planet</b>. Then I made <b>72 flights</b>, higher and faster than expected. Now we know <b>flying on Mars is possible</b>.",
+      "q": "How many flights did Ingenuity make?",
+      "opts": [
+        "5",
+        "72",
+        "1,000"
+      ],
+      "cap": "NASA's Ingenuity Mars Helicopter",
+      "script": [
+        "I was designed for only 5 flights, but I flew 72 times!",
+        "I'm Ingenuity, a tiny helicopter on Mars.",
+        "Mars' air is less than 1% as thick as Earth's, so flying there is hard.",
+        "On April 19, 2021, I made the first powered flight on another planet!",
+        "I kept flying for nearly 3 years, higher and faster than expected.",
+        "In January 2024, my rotor blades were damaged, and I landed for the last time.",
+        "Now we know flying on Mars is possible.",
+        "What would you explore with a Mars helicopter?"
+      ]
+    },
+    "ar": {
+      "name": "إنجينيويتي",
+      "short": "إنجينيويتي",
+      "place": "فوهة جيزيرو",
+      "story": "صُمّمت لخمس رحلات طيران فقط، لكنني طرت 72 مرة! أنا إنجينيويتي، مروحية صغيرة على المريخ. هواء المريخ أخف من 1% من هواء الأرض، لذلك الطيران هناك صعب جدًا. وفي 19 نيسان 2021 قمت بأول طيران بمحرّك على كوكب آخر! وواصلت الطيران قرابة 3 سنوات، أعلى وأسرع مما توقّع أي أحد. في كانون الثاني 2024 تضرّرت شفراتي، وهبطت للمرة الأخيرة. والآن نعرف أن الطيران على المريخ ممكن. ماذا كنت ستستكشف بمروحية على المريخ؟",
+      "science": "هواء المريخ <b>أخف من 1% من هواء الأرض</b>، لذلك الطيران هناك صعب جدًا. في 19 نيسان 2021 قمت <b>بأول طيران بمحرّك على كوكب آخر</b>. ثم طرت <b>72 مرة</b>، أعلى وأسرع مما توقّع أي أحد. والآن نعرف أن <b>الطيران على المريخ ممكن</b>.",
+      "q": "كم رحلة طيران قامت بها إنجينيويتي؟",
+      "opts": [
+        "5",
+        "72",
+        "1,000"
+      ],
+      "cap": "مروحية إنجينيويتي التابعة لناسا",
+      "script": [
+        "صُمّمت لخمس رحلات طيران فقط، لكنني طرت 72 مرة!",
+        "أنا إنجينيويتي، مروحية صغيرة على المريخ.",
+        "هواء المريخ أخف من 1% من هواء الأرض، لذلك الطيران هناك صعب جدًا.",
+        "وفي 19 نيسان 2021 قمت بأول طيران بمحرّك على كوكب آخر!",
+        "وواصلت الطيران قرابة 3 سنوات، أعلى وأسرع مما توقّع أي أحد.",
+        "في كانون الثاني 2024 تضرّرت شفراتي، وهبطت للمرة الأخيرة.",
+        "والآن نعرف أن الطيران على المريخ ممكن.",
+        "ماذا كنت ستستكشف بمروحية على المريخ؟"
+      ]
+    },
+    "years": "2021–2024",
+    "media": [
+      "PIA23882",
+      "ing-first-flight",
+      "PIA23720",
+      "PIA25970",
+      "PIA26243"
+    ],
+    "video": true,
+    "sources": [
+      "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/",
+      "https://images.nasa.gov/details/PIA26243"
+    ]
+  },
+  {
+    "id": "phx",
+    "world": "mars",
+    "x": 245,
+    "y": 72,
+    "emoji": "🧊",
+    "year": 2008,
+    "status": "silent",
+    "a": 1,
+    "src": "https://science.nasa.gov/mission/mars-phoenix/",
+    "en": {
+      "name": "Phoenix",
+      "short": "Phoenix",
+      "place": "Mars' northern arctic plains",
+      "story": "I dug into the arctic ground of Mars, and I found ice! I'm Phoenix. On May 25, 2008, I landed on the arctic plains near Mars' North Pole. Every day, I used my robotic arm to dig up soil. Then I tested the samples in tiny ovens. Because of that, scientists verified that water ice is hidden just under the surface. I also found a chemical called perchlorate. My mission ended in November 2008. What would you look for in Martian ice?",
+      "science": "I verified that <b>water ice</b> is hidden just under the Martian soil. I also found <b>perchlorate</b>, a chemical that could be an energy source for tiny microbes and a useful resource for future explorers.",
+      "q": "What did Phoenix find just under the soil near Mars' North Pole?",
+      "opts": [
+        "Gold",
+        "Water ice",
+        "Lava"
+      ],
+      "script": [
+        "I dug into the arctic ground of Mars, and I found ice!",
+        "I'm Phoenix.",
+        "On May 25, 2008, I landed on the arctic plains near Mars' North Pole.",
+        "Every day, I used my robotic arm to dig up soil.",
+        "Then I tested the samples in tiny ovens.",
+        "Because of that, scientists verified that water ice is hidden just under the surface.",
+        "I also found a chemical called perchlorate.",
+        "My mission ended in November 2008.",
+        "What would you look for in Martian ice?"
+      ]
+    },
+    "ar": {
+      "name": "فينيكس",
+      "short": "فينيكس",
+      "place": "السهول القطبية الشمالية للمريخ",
+      "story": "حفرت في الأرض القطبية للمريخ، ووجدت جليدًا! أنا فينيكس. في 25 أيار 2008 هبطت على السهول القطبية قرب القطب الشمالي للمريخ. كل يوم كنت أستعمل ذراعي الآلية لأحفر التربة. ثم اختبرت العيّنات في أفران صغيرة. وبفضل ذلك تأكّد العلماء أن جليد الماء مختبئ تحت السطح مباشرة. ووجدت أيضًا مادة كيميائية اسمها البيركلورات. انتهت مهمتي في تشرين الثاني 2008. ماذا كنت ستبحث عنه في جليد المريخ؟",
+      "science": "تأكّدت أن <b>جليد الماء</b> مختبئ تحت تربة المريخ مباشرة. ووجدت أيضًا <b>البيركلورات</b>، وهي مادة كيميائية قد تكون مصدر طاقة لكائنات دقيقة، ومادة مفيدة لمستكشفي المستقبل.",
+      "q": "ماذا وجد فينيكس تحت التربة مباشرة قرب القطب الشمالي للمريخ؟",
+      "opts": [
+        "ذهبًا",
+        "جليد ماء",
+        "حممًا بركانية"
+      ],
+      "script": [
+        "حفرت في الأرض القطبية للمريخ، ووجدت جليدًا!",
+        "أنا فينيكس.",
+        "في 25 أيار 2008 هبطت على السهول القطبية قرب القطب الشمالي للمريخ.",
+        "كل يوم كنت أستعمل ذراعي الآلية لأحفر التربة.",
+        "ثم اختبرت العيّنات في أفران صغيرة.",
+        "وبفضل ذلك تأكّد العلماء أن جليد الماء مختبئ تحت السطح مباشرة.",
+        "ووجدت أيضًا مادة كيميائية اسمها البيركلورات.",
+        "انتهت مهمتي في تشرين الثاني 2008.",
+        "ماذا كنت ستبحث عنه في جليد المريخ؟"
+      ]
+    },
+    "img": null,
+    "sources": [
+      "https://science.nasa.gov/mission/mars-phoenix/"
+    ],
+    "years": "2008",
+    "media": [
+      "PIA09942",
+      "PIA10666",
+      "PIA10693",
+      "PIA10745",
+      "PIA10910"
+    ],
+    "video": true
+  },
+  {
+    "id": "voy",
+    "world": "deep",
+    "x": 345,
+    "y": 118,
+    "emoji": "📀",
+    "year": 1977,
+    "status": "travel",
+    "a": 0,
+    "img": "images/voy.jpg",
+    "nasaId": "PIA04495",
+    "credit": "NASA/JPL (artist's concept)",
+    "src": "https://science.nasa.gov/mission/voyager/where-are-voyager-1-and-voyager-2-now/",
+    "en": {
+      "name": "Voyager 1",
+      "short": "Voyager 1",
+      "place": "Interstellar space",
+      "story": "Right now, I'm farther from home than any human-made thing has ever been. I'm Voyager 1, and I left Earth in 1977. First, I visited Jupiter and Saturn. In 2012, I crossed into interstellar space, outside the Sun's bubble. I carry a Golden Record with sounds and pictures from Earth. And I'm still talking to Earth today. Around November 18, 2026, I'll be one light-day away: my messages will take a whole day to reach you! What sound from Earth would you put on the Golden Record?",
+      "science": "At Jupiter and Saturn, I showed us <b>active volcanoes on Jupiter's moon Io</b> and the details of <b>Saturn's rings</b>. Then I crossed into <b>interstellar space</b>, outside the Sun's bubble, and I'm still sending data back to Earth.",
+      "q": "What does Voyager 1 carry?",
+      "opts": [
+        "A golden record of Earth's sounds",
+        "A flag from every country",
+        "A small garden"
+      ],
+      "cap": "Artist's concept of a Voyager spacecraft",
+      "script": [
+        "Right now, I'm farther from home than any human-made thing has ever been.",
+        "I'm Voyager 1, and I left Earth in 1977.",
+        "First, I visited Jupiter and Saturn.",
+        "In 2012, I crossed into interstellar space, outside the Sun's bubble.",
+        "I carry a Golden Record with sounds and pictures from Earth.",
+        "And I'm still talking to Earth today.",
+        "Around November 18, 2026, I'll be one light-day away: my messages will take a whole day to reach you!",
+        "What sound from Earth would you put on the Golden Record?"
+      ]
+    },
+    "ar": {
+      "name": "فوياجر 1",
+      "short": "فوياجر 1",
+      "place": "الفضاء بين النجوم",
+      "story": "أنا الآن أبعد عن البيت من أي شيء صنعه الإنسان على الإطلاق. أنا فوياجر 1، وغادرت الأرض سنة 1977. زرت أولًا المشتري وزحل. وفي سنة 2012 عبرت إلى الفضاء بين النجوم، خارج فقاعة الشمس. أحمل معي أسطوانة ذهبية فيها أصوات وصور من الأرض. وما زلت أتواصل مع الأرض حتى اليوم. وفي حوالي 18 تشرين الثاني 2026 سأكون على بُعد يوم ضوئي: رسائلي ستحتاج يومًا كاملًا لتصل إليكم! أي صوت من الأرض كنت ستضعه على الأسطوانة الذهبية؟",
+      "science": "عند المشتري وزحل أريتكم <b>براكين نشطة على قمر المشتري آيو</b> وتفاصيل <b>حلقات زحل</b>. ثم عبرت إلى <b>الفضاء بين النجوم</b> خارج فقاعة الشمس، وما زلت أرسل البيانات إلى الأرض.",
+      "q": "ماذا يحمل فوياجر 1 معه؟",
+      "opts": [
+        "أسطوانة ذهبية فيها أصوات الأرض",
+        "علمًا لكل دولة",
+        "حديقة صغيرة"
+      ],
+      "cap": "رسم فني لمركبة فوياجر",
+      "script": [
+        "أنا الآن أبعد عن البيت من أي شيء صنعه الإنسان على الإطلاق.",
+        "أنا فوياجر 1، وغادرت الأرض سنة 1977.",
+        "زرت أولًا المشتري وزحل.",
+        "وفي سنة 2012 عبرت إلى الفضاء بين النجوم، خارج فقاعة الشمس.",
+        "أحمل معي أسطوانة ذهبية فيها أصوات وصور من الأرض.",
+        "وما زلت أتواصل مع الأرض حتى اليوم.",
+        "وفي حوالي 18 تشرين الثاني 2026 سأكون على بُعد يوم ضوئي: رسائلي ستحتاج يومًا كاملًا لتصل إليكم!",
+        "أي صوت من الأرض كنت ستضعه على الأسطوانة الذهبية؟"
+      ]
+    },
+    "years": "1977–today",
+    "media": [
+      "PIA04495",
+      "PIA00029",
+      "PIA00024",
+      "PIA17046",
+      "PIA14113"
+    ],
+    "video": true,
+    "sources": [
+      "https://science.nasa.gov/mission/voyager/where-are-voyager-1-and-voyager-2-now/",
+      "https://science.nasa.gov/mission/voyager/voyager-1/",
+      "https://science.nasa.gov/mission/voyager/voyager-golden-record-overview/",
+      "https://science.nasa.gov/mission/voyager/mission-overview/"
+    ]
+  },
+  {
+    "id": "pio",
+    "world": "deep",
+    "x": 405,
+    "y": 255,
+    "emoji": "🧭",
+    "year": 1972,
+    "status": "travel",
+    "a": 1,
+    "img": "images/pio.jpg",
+    "nasaId": "ARC-1972-AC72-2135",
+    "credit": "NASA Ames Research Center",
+    "src": "https://science.nasa.gov/mission/pioneer-10/",
+    "en": {
+      "name": "Pioneer 10",
+      "short": "Pioneer 10",
+      "place": "Heading toward the star Aldebaran",
+      "story": "I was the first spacecraft ever to fly through the asteroid belt! I'm Pioneer 10. I launched on March 2, 1972. Then I became the first spacecraft to fly past Jupiter. I was designed for a 21-month mission, but I lasted more than 30 years! My last signal reached Earth on January 23, 2003. Now I'm heading toward the red star Aldebaran. I should pass it in about two million years! Where would you go if you could travel forever?",
+      "science": "I was the <b>first spacecraft to fly through the asteroid belt</b> and the <b>first to fly past Jupiter</b>. I was also the first human-made object to go <b>beyond Neptune's orbit</b>.",
+      "q": "Pioneer 10 was the first spacecraft to...",
+      "opts": [
+        "Land on Mars",
+        "Fly through the asteroid belt",
+        "Orbit the Moon"
+      ],
+      "cap": "Pioneer 10 being readied for launch, 1972",
+      "script": [
+        "I was the first spacecraft ever to fly through the asteroid belt!",
+        "I'm Pioneer 10.",
+        "I launched on March 2, 1972.",
+        "Then I became the first spacecraft to fly past Jupiter.",
+        "I was designed for a 21-month mission, but I lasted more than 30 years!",
+        "My last signal reached Earth on January 23, 2003.",
+        "Now I'm heading toward the red star Aldebaran.",
+        "I should pass it in about two million years!",
+        "Where would you go if you could travel forever?"
+      ]
+    },
+    "ar": {
+      "name": "بايونير 10",
+      "short": "بايونير 10",
+      "place": "متجه نحو نجم الدبران",
+      "story": "كنت أول مركبة فضائية على الإطلاق تعبر حزام الكويكبات! أنا بايونير 10. انطلقت في 2 آذار 1972. ثم أصبحت أول مركبة تمر بجانب المشتري. صُمّمت لمهمة مدتها 21 شهرًا، لكنني بقيت أعمل أكثر من 30 سنة! ووصلت آخر إشارة مني إلى الأرض في 23 كانون الثاني 2003. والآن أتجه نحو النجم الأحمر الدبران. ويُتوقّع أن أمرّ بجانبه بعد حوالي مليوني سنة! إلى أين كنت ستذهب لو استطعت السفر إلى الأبد؟",
+      "science": "كنت <b>أول مركبة تعبر حزام الكويكبات</b> و<b>أول مركبة تمر بجانب المشتري</b>. وكنت أيضًا أول شيء صنعه الإنسان يتجاوز <b>مدار نبتون</b>.",
+      "q": "بايونير 10 كانت أول مركبة...",
+      "opts": [
+        "تهبط على المريخ",
+        "تعبر حزام الكويكبات",
+        "تدور حول القمر"
+      ],
+      "cap": "تجهيز بايونير 10 للإطلاق، 1972",
+      "script": [
+        "كنت أول مركبة فضائية على الإطلاق تعبر حزام الكويكبات!",
+        "أنا بايونير 10.",
+        "انطلقت في 2 آذار 1972.",
+        "ثم أصبحت أول مركبة تمر بجانب المشتري.",
+        "صُمّمت لمهمة مدتها 21 شهرًا، لكنني بقيت أعمل أكثر من 30 سنة!",
+        "ووصلت آخر إشارة مني إلى الأرض في 23 كانون الثاني 2003.",
+        "والآن أتجه نحو النجم الأحمر الدبران.",
+        "ويُتوقّع أن أمرّ بجانبه بعد حوالي مليوني سنة!",
+        "إلى أين كنت ستذهب لو استطعت السفر إلى الأبد؟"
+      ]
+    },
+    "sources": [
+      "https://science.nasa.gov/mission/pioneer-10/"
+    ],
+    "years": "1972–2003",
+    "media": [
+      "ARC-1973-AC73-4247",
+      "ARC-1972-AC72-2135",
+      "ARC-1972-AC72-2140",
+      "ARC-1973-AC73-9278"
+    ],
+    "video": true
+  },
+  {
+    "id": "kep",
+    "world": "deep",
+    "x": 128,
+    "y": 212,
+    "emoji": "🪐",
+    "year": 2009,
+    "status": "silent",
+    "a": 1,
+    "src": "https://science.nasa.gov/mission/kepler/",
+    "en": {
+      "name": "Kepler Space Telescope",
+      "short": "Kepler",
+      "place": "Orbiting the Sun, safely away from Earth",
+      "story": "I helped show that our night sky has more planets than stars! I'm Kepler, a space telescope. I launched in 2009. Every day, I stared at the same patch of sky, watching 150,000 stars. When a planet crossed in front of its star, the starlight dipped a tiny bit, and I noticed! Because of that, I found more than 2,600 planets. In 2018, I ran out of fuel. Do you think one of those planets could be like Earth?",
+      "science": "I watched for <b>tiny dips in starlight</b> when planets crossed in front of their stars. I left a legacy of <b>more than 2,600 planets</b>, and helped show that our night sky has <b>more planets than stars</b>.",
+      "q": "How did Kepler find planets?",
+      "opts": [
+        "By listening for radio signals",
+        "By watching stars dim when a planet passes in front",
+        "By landing on them"
+      ],
+      "script": [
+        "I helped show that our night sky has more planets than stars!",
+        "I'm Kepler, a space telescope.",
+        "I launched in 2009.",
+        "Every day, I stared at the same patch of sky, watching 150,000 stars.",
+        "When a planet crossed in front of its star, the starlight dipped a tiny bit, and I noticed!",
+        "Because of that, I found more than 2,600 planets.",
+        "In 2018, I ran out of fuel.",
+        "Do you think one of those planets could be like Earth?"
+      ]
+    },
+    "ar": {
+      "name": "تلسكوب كبلر الفضائي",
+      "short": "كبلر",
+      "place": "يدور حول الشمس بعيدًا عن الأرض بأمان",
+      "story": "ساعدت في إظهار أن سماء الليل فيها كواكب أكثر من النجوم! أنا كبلر، تلسكوب فضائي. انطلقت سنة 2009. كل يوم كنت أحدّق في الجزء نفسه من السماء وأراقب 150,000 نجم. وعندما يمر كوكب أمام نجمه، ينخفض ضوء النجم قليلًا جدًا، فألاحظ ذلك! وبفضل ذلك وجدت أكثر من 2,600 كوكب. وفي سنة 2018 نفد وقودي. برأيك، هل يمكن أن يكون أحد هذه الكواكب مثل الأرض؟",
+      "science": "كنت أراقب <b>انخفاضات صغيرة في ضوء النجوم</b> عندما تمر الكواكب أمامها. وتركت إرثًا من <b>أكثر من 2,600 كوكب</b>، وساعدت في إظهار أن سماء الليل فيها <b>كواكب أكثر من النجوم</b>.",
+      "q": "كيف وجد كبلر الكواكب؟",
+      "opts": [
+        "بالاستماع إلى إشارات راديو",
+        "بمراقبة خفوت ضوء النجم عندما يمر كوكب أمامه",
+        "بالهبوط عليها"
+      ],
+      "script": [
+        "ساعدت في إظهار أن سماء الليل فيها كواكب أكثر من النجوم!",
+        "أنا كبلر، تلسكوب فضائي.",
+        "انطلقت سنة 2009.",
+        "كل يوم كنت أحدّق في الجزء نفسه من السماء وأراقب 150,000 نجم.",
+        "وعندما يمر كوكب أمام نجمه، ينخفض ضوء النجم قليلًا جدًا، فألاحظ ذلك!",
+        "وبفضل ذلك وجدت أكثر من 2,600 كوكب.",
+        "وفي سنة 2018 نفد وقودي.",
+        "برأيك، هل يمكن أن يكون أحد هذه الكواكب مثل الأرض؟"
+      ]
+    },
+    "img": null,
+    "sources": [
+      "https://science.nasa.gov/mission/kepler/"
+    ],
+    "years": "2009–2018",
+    "media": [
+      "PIA13351",
+      "PIA11824",
+      "KSC-2009-1783",
+      "PIA11984"
+    ],
+    "video": true
+  },
+  {
+    "id": "near",
+    "world": "deep",
+    "x": 182,
+    "y": 292,
+    "emoji": "☄️",
+    "year": 1996,
+    "status": "silent",
+    "a": 0,
+    "src": "https://science.nasa.gov/mission/near-shoemaker/",
+    "en": {
+      "name": "NEAR Shoemaker",
+      "short": "NEAR",
+      "place": "On the asteroid 433 Eros",
+      "story": "I was the first spacecraft to orbit an asteroid, and the first to land on one! I'm NEAR Shoemaker. I launched in 1996. On Valentine's Day, February 14, 2000, I went into orbit around the asteroid Eros. Every day, I studied it and took pictures: 160,000 of them! Then, on February 12, 2001, my team gently set me down on its surface. My last contact with Earth was on February 28, 2001. What would you name your own asteroid?",
+      "science": "I sent back about <b>10 times more data</b> than planned, including <b>160,000 images</b>. My data showed that Eros has <b>no magnetic field</b>.",
+      "q": "What was NEAR Shoemaker the first spacecraft to do?",
+      "opts": [
+        "Orbit and land on an asteroid",
+        "Visit Saturn",
+        "Find water on Mars"
+      ],
+      "script": [
+        "I was the first spacecraft to orbit an asteroid, and the first to land on one!",
+        "I'm NEAR Shoemaker.",
+        "I launched in 1996.",
+        "On Valentine's Day, February 14, 2000, I went into orbit around the asteroid Eros.",
+        "Every day, I studied it and took pictures: 160,000 of them!",
+        "Then, on February 12, 2001, my team gently set me down on its surface.",
+        "My last contact with Earth was on February 28, 2001.",
+        "What would you name your own asteroid?"
+      ]
+    },
+    "ar": {
+      "name": "نير شوميكر",
+      "short": "نير",
+      "place": "على الكويكب 433 إيروس",
+      "story": "كنت أول مركبة فضائية تدور حول كويكب، وأول مركبة تهبط على كويكب! أنا نير شوميكر. انطلقت سنة 1996. وفي يوم عيد الحب، 14 شباط 2000، دخلت في مدار حول الكويكب إيروس. كل يوم كنت أدرسه وألتقط له الصور: 160,000 صورة! ثم في 12 شباط 2001 أنزلني فريقي بلطف على سطحه. وكان آخر اتصال لي بالأرض في 28 شباط 2001. ماذا كنت ستسمّي كويكبك الخاص؟",
+      "science": "أرسلت حوالي <b>10 أضعاف البيانات</b> المخطط لها، ومنها <b>160,000 صورة</b>. وأظهرت بياناتي أن إيروس <b>ليس له مجال مغناطيسي</b>.",
+      "q": "ما الذي كانت نير شوميكر أول مركبة تفعله؟",
+      "opts": [
+        "تدور حول كويكب وتهبط عليه",
+        "تزور زحل",
+        "تجد ماء على المريخ"
+      ],
+      "script": [
+        "كنت أول مركبة فضائية تدور حول كويكب، وأول مركبة تهبط على كويكب!",
+        "أنا نير شوميكر.",
+        "انطلقت سنة 1996.",
+        "وفي يوم عيد الحب، 14 شباط 2000، دخلت في مدار حول الكويكب إيروس.",
+        "كل يوم كنت أدرسه وألتقط له الصور: 160,000 صورة!",
+        "ثم في 12 شباط 2001 أنزلني فريقي بلطف على سطحه.",
+        "وكان آخر اتصال لي بالأرض في 28 شباط 2001.",
+        "ماذا كنت ستسمّي كويكبك الخاص؟"
+      ]
+    },
+    "img": null,
+    "sources": [
+      "https://science.nasa.gov/mission/near-shoemaker/"
+    ],
+    "years": "1996–2001",
+    "media": [
+      "PIA18177",
+      "PIA02467",
+      "PIA03148"
+    ],
+    "video": true
+  },
+  {
+    "id": "dawn",
+    "world": "deep",
+    "x": 238,
+    "y": 238,
+    "emoji": "🌀",
+    "year": 2007,
+    "status": "silent",
+    "a": 1,
+    "src": "https://science.nasa.gov/mission/dawn/",
+    "en": {
+      "name": "Dawn",
+      "short": "Dawn",
+      "place": "Orbiting the dwarf planet Ceres",
+      "story": "Why visit one world when you can visit two? I'm Dawn, and I launched in 2007 with a special ion engine. First, I orbited giant asteroid Vesta. Then I flew to dwarf planet Ceres. That made me the first spacecraft to orbit two worlds beyond Earth, and the first to visit a dwarf planet! In 2018, I ran out of fuel, but I'm still circling Ceres. I helped show that dwarf planets could have had oceans for much of their history. What would you look for on a faraway world?",
+      "science": "With my <b>ion engine</b>, I became the <b>first spacecraft to orbit two worlds beyond Earth</b>, Vesta and Ceres, and the first to visit a dwarf planet. I helped show that dwarf planets <b>could have had oceans</b> for much of their history.",
+      "q": "What was special about Dawn?",
+      "opts": [
+        "It landed on the Sun",
+        "It orbited two different worlds",
+        "It carried astronauts"
+      ],
+      "script": [
+        "Why visit one world when you can visit two?",
+        "I'm Dawn, and I launched in 2007 with a special ion engine.",
+        "First, I orbited giant asteroid Vesta.",
+        "Then I flew to dwarf planet Ceres.",
+        "That made me the first spacecraft to orbit two worlds beyond Earth, and the first to visit a dwarf planet!",
+        "In 2018, I ran out of fuel, but I'm still circling Ceres.",
+        "I helped show that dwarf planets could have had oceans for much of their history.",
+        "What would you look for on a faraway world?"
+      ]
+    },
+    "ar": {
+      "name": "داون",
+      "short": "داون",
+      "place": "يدور حول الكوكب القزم سيريس",
+      "story": "لماذا تزور عالمًا واحدًا إذا كان بإمكانك أن تزور عالمين؟ أنا داون، وانطلقت سنة 2007 بمحرّك أيوني خاص. أولًا دُرت حول الكويكب العملاق فيستا. ثم طرت إلى الكوكب القزم سيريس. وبهذا أصبحت أول مركبة تدور حول عالمين بعيدين عن الأرض، وأول مركبة تزور كوكبًا قزمًا! في سنة 2018 نفد وقودي، لكنني ما زلت أدور حول سيريس. وساعدت في إظهار أن الكواكب القزمة ربما كانت فيها محيطات لفترة طويلة من تاريخها. ما الذي كنت ستبحث عنه على عالم بعيد؟",
+      "science": "بفضل <b>محرّكي الأيوني</b> أصبحت <b>أول مركبة تدور حول عالمين بعيدين عن الأرض</b>، فيستا وسيريس، وأول مركبة تزور كوكبًا قزمًا. وساعدت في إظهار أن الكواكب القزمة <b>ربما كانت فيها محيطات</b> لفترة طويلة من تاريخها.",
+      "q": "ما الشيء المميز في داون؟",
+      "opts": [
+        "هبطت على الشمس",
+        "دارت حول عالمين مختلفين",
+        "حملت رواد فضاء"
+      ],
+      "script": [
+        "لماذا تزور عالمًا واحدًا إذا كان بإمكانك أن تزور عالمين؟",
+        "أنا داون، وانطلقت سنة 2007 بمحرّك أيوني خاص.",
+        "أولًا دُرت حول الكويكب العملاق فيستا.",
+        "ثم طرت إلى الكوكب القزم سيريس.",
+        "وبهذا أصبحت أول مركبة تدور حول عالمين بعيدين عن الأرض، وأول مركبة تزور كوكبًا قزمًا!",
+        "في سنة 2018 نفد وقودي، لكنني ما زلت أدور حول سيريس.",
+        "وساعدت في إظهار أن الكواكب القزمة ربما كانت فيها محيطات لفترة طويلة من تاريخها.",
+        "ما الذي كنت ستبحث عنه على عالم بعيد؟"
+      ]
+    },
+    "img": null,
+    "years": "2007–2018",
+    "media": [
+      "PIA19598",
+      "KSC-07PD-2590",
+      "PIA18922",
+      "PIA15678",
+      "PIA21078"
+    ],
+    "video": true,
+    "sources": [
+      "https://science.nasa.gov/mission/dawn/",
+      "https://www.nasa.gov/news-release/nasas-dawn-mission-to-asteroid-belt-comes-to-end/"
+    ]
+  }
+]

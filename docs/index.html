@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robot Stories · Abandoned but not Forgotten</title>
+<meta name="description" content="NASA's robots on the Moon, Mars and in deep space tell kids their own stories. English and Arabic. NASA Space Apps 2026.">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  /* ===== "Candy space" design system. Rule: color is for fun, SHAPE shows what you can press. =====
+     Everything you can press = chunky rounded button with a solid 3D bottom edge that pushes down on tap.
+     Things you can't press are flat (no 3D edge). All text pairs checked at 6.9:1 or more. */
+  :root{--bg:#140F33;--panel:#241B55;--panel2:#1D1647;--soft:#2E2366;--line:rgba(196,181,253,.28);--text:#F5F3FF;--muted:#CFC8F5;
+    --yellow:#FFD23F;--cyan:#4FD1FF;--pink:#FF7AB6;--lime:#A3E635;--orange:#FF9F5A;--purple:#C4B5FD;--moon:#9EC5FF;
+    --inkY:#2A1D00;--inkC:#062B3A;--inkP:#3D0A22;--inkL:#1A2E05;--inkO:#3A1A05;--inkU:#1E1240;
+    --link:#4FD1FF;--okText:#4FD1FF;--noText:#FF9F5A;--sciText:#A3E635;--optBg:#F5F3FF;--optInk:#140F33;
+    --wc:#FFD23F;--rc:#FFD23F;
+    --head:'Fredoka',system-ui,sans-serif;--body:'Nunito',system-ui,sans-serif}
+  html[data-theme="light"]{--bg:#FFF7EC;--panel:#FFFFFF;--panel2:#FFF3DD;--soft:#F3EEFF;--line:#DCD3F2;--text:#140F33;--muted:#4A4470;
+    --link:#0B5F86;--okText:#0B5F86;--noText:#8A3A00;--sciText:#35530A;--optBg:#F3EEFF}
+  html[lang="ar"]{--head:'Baloo Bhaijaan 2',system-ui,sans-serif;--body:'Baloo Bhaijaan 2',system-ui,sans-serif}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--body);font-size:18px;color:var(--text);min-height:100vh;background-color:var(--bg);
+    background-image:radial-gradient(ellipse 45% 35% at 10% 8%,rgba(255,122,182,.16),transparent 70%),
+      radial-gradient(ellipse 40% 35% at 92% 30%,rgba(79,209,255,.13),transparent 70%),
+      radial-gradient(ellipse 50% 40% at 50% 100%,rgba(196,181,253,.16),transparent 70%);
+    background-attachment:fixed}
+  /* world pages: the same nebula, softly tinted with the world's color */
+  body[data-world]{background-image:radial-gradient(ellipse 60% 45% at 15% 0%,color-mix(in srgb,var(--wc) 22%,transparent),transparent 70%),
+      radial-gradient(ellipse 40% 35% at 92% 30%,rgba(255,122,182,.10),transparent 70%),
+      radial-gradient(ellipse 55% 45% at 80% 100%,color-mix(in srgb,var(--wc) 16%,transparent),transparent 70%)}
+  .stars,.stars2{position:fixed;inset:0;pointer-events:none;background-image:
+    radial-gradient(1.5px 1.5px at 12% 22%,#fff,transparent),radial-gradient(1px 1px at 33% 72%,#fff,transparent),radial-gradient(2px 2px at 57% 31%,#fff,transparent),
+    radial-gradient(1px 1px at 81% 13%,#fff,transparent),radial-gradient(1.5px 1.5px at 92% 63%,#fff,transparent),radial-gradient(1px 1px at 44% 91%,#fff,transparent),
+    radial-gradient(2px 2px at 71% 82%,#fff,transparent),radial-gradient(1px 1px at 22% 52%,#fff,transparent),radial-gradient(1.5px 1.5px at 5% 85%,#fff,transparent);
+    animation:twinkle 4s ease-in-out infinite}
+  .stars2{background-image:radial-gradient(1.5px 1.5px at 18% 40%,#fff,transparent),radial-gradient(1px 1px at 64% 8%,#fff,transparent),radial-gradient(2px 2px at 86% 45%,#fff,transparent),
+    radial-gradient(1px 1px at 38% 18%,#fff,transparent),radial-gradient(1.5px 1.5px at 50% 60%,#fff,transparent),radial-gradient(1px 1px at 8% 66%,#fff,transparent),
+    radial-gradient(1.5px 1.5px at 76% 94%,#fff,transparent);animation-delay:-2s;animation-duration:5s}
+  @keyframes twinkle{0%,100%{opacity:.65}50%{opacity:.2}}
+  html[data-theme="light"] .stars,html[data-theme="light"] .stars2{display:none}
+  html[data-theme="light"] body{background-image:radial-gradient(ellipse 45% 35% at 10% 8%,rgba(255,122,182,.14),transparent 70%),radial-gradient(ellipse 50% 40% at 90% 90%,rgba(79,209,255,.14),transparent 70%)}
+  a{color:var(--link)}
+  button{font-family:inherit}
+  html,body{overflow-x:hidden}
+  .wrap{position:relative;max-width:1180px;margin:0 auto;padding:16px 16px 40px}
+  .ltr{direction:ltr;unicode-bidi:isolate}
+
+  /* ===== the ONE button shape ===== */
+  .chip,.tab,.wcard,.tli,.opt,.btn,.pill{--bc:var(--yellow);--bi:var(--inkY);
+    background:var(--bc);color:var(--bi);border:0;border-radius:22px;min-height:48px;padding:10px 18px;
+    font-family:var(--head);font-weight:600;font-size:18px;line-height:1.2;cursor:pointer;
+    box-shadow:0 6px 0 color-mix(in srgb,var(--bc) 50%,#000),0 10px 18px rgba(0,0,0,.25);
+    transition:transform .08s ease-out,box-shadow .08s ease-out;-webkit-tap-highlight-color:transparent}
+  .chip:hover,.tab:hover,.wcard:hover,.tli:hover,.opt:hover,.btn:hover,.pill:hover{filter:brightness(1.06)}
+  .chip:active,.tab:active,.wcard:active,.tli:active,.opt:active,.btn:active,.pill:active{transform:translateY(5px);box-shadow:0 1px 0 color-mix(in srgb,var(--bc) 50%,#000),0 2px 6px rgba(0,0,0,.25)}
+  /* chosen item = stays pushed down + a white ring (not only a color change) */
+  .tab.on,.tli.on{transform:translateY(4px);box-shadow:0 2px 0 color-mix(in srgb,var(--bc) 50%,#000);outline:3px solid var(--text);outline-offset:3px}
+  :is(.chip,.tab,.wcard,.tli,.opt,.btn,.pill,.pin):focus-visible{outline:4px solid var(--text);outline-offset:4px}
+  .c-cyan{--bc:var(--cyan);--bi:var(--inkC)}.c-pink{--bc:var(--pink);--bi:var(--inkP)}.c-lime{--bc:var(--lime);--bi:var(--inkL)}
+  .c-orange{--bc:var(--orange);--bi:var(--inkO)}.c-purple{--bc:var(--purple);--bi:var(--inkU)}
+
+  /* ===== top bar ===== */
+  .topbar{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}
+  .brand{font-family:var(--head);font-size:26px;font-weight:700;cursor:pointer;white-space:nowrap}
+  .brand span{color:var(--yellow)}
+  .brand .bw{font-style:normal}
+  @media(max-width:430px){.brand .bw{display:none}} /* small phones: "🤖 Stories" so the top bar stays on one line */
+  html[data-theme="light"] .brand span{color:#B5179E}
+  .tools{display:flex;gap:10px;align-items:center}
+  .chip{padding:8px 16px;font-size:17px}
+  .chip .ic{font-size:20px}
+  .passport{display:flex;align-items:center;gap:6px;background:transparent;border:2px dashed var(--yellow);border-radius:14px;padding:5px 12px;font-family:var(--head);line-height:1.15}
+  .passport .n{font-size:20px;font-weight:700;direction:ltr;unicode-bidi:isolate;white-space:nowrap}
+  .passport .l{font-size:14px;color:var(--muted);max-width:90px}
+  @media(max-width:640px){
+    .brand{font-size:20px}
+    .topbar{gap:6px}.tools{flex-shrink:0}
+    .tools{gap:7px}
+    .chip .lbl,.passport .l{display:none}
+    .chip{padding:8px 12px;min-width:48px}
+    #themeBtn{display:none} /* light mode is for classroom projectors; phones don't need it */
+    .passport{padding:4px 8px}.passport .n{font-size:17px}
+  }
+
+  /* ===== intro ===== */
+  #intro{display:flex;flex-direction:column;align-items:center;text-align:center;padding:26px 0 10px}
+  #intro .robo{font-size:76px;animation:float 3s ease-in-out infinite}
+  @keyframes float{50%{transform:translateY(-10px)}}
+  #intro h1{font-family:var(--head);font-size:clamp(32px,6vw,56px);margin:8px 0 10px;line-height:1.15}
+  #intro h1 span{color:var(--pink)}
+  html[data-theme="light"] #intro h1 span{color:#B5179E}
+  .abt{max-width:660px;text-align:start;margin:6px 0;display:grid;gap:10px;width:100%}
+  .abt div{background:var(--panel);border-radius:20px;padding:12px 16px;font-size:18px;line-height:1.55;border-inline-start:6px solid var(--cyan)}
+  .abt div:nth-child(2){border-color:var(--pink)}
+  .abt .mission{border-color:var(--yellow)}
+  .abt b{margin-inline-end:8px}
+  .introvid{width:100%;max-width:720px;margin:16px auto 4px}
+  .worldpick{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:26px 0 10px;width:100%;max-width:760px}
+  .wcard{--bc:var(--panel);color:var(--text);border:3px solid var(--wc);border-radius:26px;padding:20px 10px 16px;
+    box-shadow:0 8px 0 var(--wc),0 14px 24px rgba(0,0,0,.3)}
+  .wcard:active{box-shadow:0 2px 0 var(--wc)}
+  .wcard .t{font-family:var(--head);font-size:24px;font-weight:700;margin-top:10px}
+  .wcard .c{font-size:17px;color:var(--muted);font-family:var(--body);font-weight:700}
+  @media(max-width:640px){.worldpick{gap:10px}.wcard{padding:14px 4px 12px;border-radius:20px}.wcard .t{font-size:18px}.wcard .c{font-size:15px}.wcard .planet{width:64px;height:64px}}
+  .intro-note{font-size:16px;color:var(--muted);margin-top:16px}
+
+  /* big planet drawings */
+  .planet{width:116px;height:116px;border-radius:50%;margin:0 auto;position:relative}
+  .planet.moon{background:radial-gradient(circle at 34% 30%,#fff 0%,#9EC5FF 42%,#5B82C4 100%);box-shadow:0 0 30px rgba(158,197,255,.5)}
+  .planet.mars{background:radial-gradient(circle at 34% 30%,#FFE0C2 0%,#FF9F5A 42%,#B9541F 100%);box-shadow:0 0 30px rgba(255,159,90,.5)}
+  .planet.deep{background:radial-gradient(circle at 34% 30%,#fff 0%,#C4B5FD 42%,#6E55D6 100%);box-shadow:0 0 30px rgba(196,181,253,.5)}
+  .planet.moon::before,.planet.mars::before{content:"";position:absolute;width:22%;height:22%;left:22%;top:52%;border-radius:50%;background:rgba(20,15,51,.18);
+    box-shadow:calc(var(--s,116px)*.32) calc(var(--s,116px)*-.26) 0 calc(var(--s,116px)*-.03) rgba(20,15,51,.16),calc(var(--s,116px)*.38) calc(var(--s,116px)*.06) 0 calc(var(--s,116px)*-.05) rgba(20,15,51,.14)}
+  .planet.deep::after{content:"";position:absolute;left:-22%;right:-22%;top:40%;height:20%;border:5px solid #FF7AB6;border-radius:50%;transform:rotate(-16deg);border-top-color:transparent}
+  @media(max-width:640px){.planet{--s:64px}.planet.deep::after{border-width:3px}}
+
+  /* ===== explore ===== */
+  #explore{display:none}
+  .tabs{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px;margin:14px 0 18px}
+  .tab{padding:8px 18px}
+  @media(max-width:640px){.tabs{grid-template-columns:repeat(3,1fr);gap:8px}.tab{padding:8px 4px;font-size:16px}}
+  .grid{display:grid;grid-template-columns:1fr 1.05fr;gap:20px;align-items:start}
+  @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  .grid>*{min-width:0}
+  .card{background:var(--panel);border-radius:24px;padding:16px;border:3px solid color-mix(in srgb,var(--wc) 45%,transparent)}
+  .card.story{border-color:var(--rc);scroll-margin-top:12px}
+  svg{width:100%;height:auto;display:block}
+  .pin{cursor:pointer}
+  .pin circle.ring{animation:pulse 2s infinite;transform-origin:center;transform-box:fill-box}
+  @keyframes pulse{0%{opacity:.9;transform:scale(1)}100%{opacity:0;transform:scale(2.4)}}
+  .pin text{font-family:var(--head);font-size:15px;font-weight:600;fill:#fff;paint-order:stroke;stroke:#140F33;stroke-width:5px;stroke-linejoin:round}
+  .pin:active .dot{transform:translateY(2px)}
+  .hint{color:var(--muted);font-size:16px;text-align:center;margin-top:6px}
+  .timeline h3{font-family:var(--head);margin:16px 0 10px;font-size:19px;font-weight:600}
+  .tl{display:flex;gap:12px;overflow-x:auto;padding:4px 4px 14px}
+  .tli{flex:0 0 auto;text-align:center;font-size:16px;padding:8px 14px;border-radius:18px}
+  .tli b{display:block;font-size:18px}
+
+  .story{min-height:420px}
+  .empty{color:var(--muted);text-align:center;padding:50px 20px;font-size:19px;line-height:1.7}
+  .empty .big{font-size:60px}
+  .photo{position:relative;border-radius:18px;overflow:hidden;background:#0d0a26;aspect-ratio:16/9;margin-bottom:12px;border:4px solid var(--rc)}
+  .photo img{width:100%;height:100%;object-fit:contain;display:block}
+  .photo .fallback{position:absolute;inset:0;display:none;align-items:center;justify-content:center;font-size:80px}
+  .photo.broken img{display:none}.photo.broken .fallback{display:flex}
+  .sh{display:flex;gap:14px;align-items:center;margin:4px 0 6px}
+  .avatar{font-size:38px;width:66px;height:66px;border-radius:50%;background:var(--soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;border:5px solid var(--rc)}
+  .sh h2{font-family:var(--head);margin:0;font-size:26px;line-height:1.2}
+  .meta{font-size:17px;color:var(--muted)}
+  /* status = a flat label, not a button */
+  .status{display:inline-block;font-size:16px;font-weight:700;padding:2px 10px;border-radius:8px;margin-top:4px;background:var(--soft);color:var(--text)}
+
+  /* video */
+  .vid{position:relative;border-radius:20px;overflow:hidden;background:#000;aspect-ratio:16/9;margin-bottom:12px;border:4px solid var(--rc)}
+  .vid video{width:100%;height:100%;display:block;background:#000}
+  video::cue{font-family:var(--body);font-size:clamp(17px,2.6vw,22px);line-height:1.4;color:#fff;background:rgba(10,7,30,.88)}
+
+  /* quiz */
+  .quiz{margin:16px 0 6px;padding:16px;border-radius:22px;background:var(--panel2)}
+  .quiz .q{font-family:var(--head);font-size:21px;font-weight:600;margin-bottom:14px;line-height:1.35}
+  .quiz .q .ql{display:block;font-size:17px;color:var(--muted);margin-bottom:2px}
+  .opt{--bc:var(--optBg);--bi:var(--optInk);display:block;width:100%;text-align:start;margin-bottom:14px;padding:13px 18px;font-size:19px;
+    box-shadow:0 6px 0 #9D90D9,0 10px 18px rgba(0,0,0,.2)}
+  .opt:active{box-shadow:0 1px 0 #9D90D9}
+  .opt.right{--bc:var(--cyan);--bi:var(--inkC);box-shadow:0 6px 0 color-mix(in srgb,var(--cyan) 50%,#000)}
+  .opt.wrong{--bc:var(--orange);--bi:var(--inkO);box-shadow:0 6px 0 color-mix(in srgb,var(--orange) 50%,#000)}
+  .opt.right::after{content:"  ✓";font-weight:800}
+  .opt.wrong::after{content:"  ✗";font-weight:800}
+  .quiz.ready{animation:glow 1.2s ease-in-out 2}
+  @keyframes glow{50%{box-shadow:0 0 0 5px var(--yellow)}}
+  .fb{font-size:19px;font-weight:800;min-height:26px;font-family:var(--head)}
+  .fb.ok{color:var(--okText)}.fb.no{color:var(--noText)}
+
+  /* story text + science (kid content, flat) */
+  details.transcript{margin:14px 0}
+  .pill{display:inline-flex;align-items:center;gap:8px;list-style:none;font-size:18px}
+  .pill::-webkit-details-marker{display:none}
+  .pill::after{content:"▾";font-size:16px}
+  details[open]>.pill::after{content:"▴"}
+  .speech{background:var(--soft);border-radius:18px;padding:14px 18px;margin:16px 0 0;line-height:1.75;font-size:18px}
+  .science{background:var(--panel2);border-inline-start:6px solid var(--lime);border-radius:16px;padding:12px 16px;font-size:18px;line-height:1.7;margin:14px 0}
+  .science b{color:var(--sciText)}
+
+  /* teachers & parents box */
+  details.teach{margin:18px 0 6px}
+  .teachbox{margin-top:14px;padding:14px 16px;border-radius:16px;background:var(--panel2);font-size:16px;line-height:1.6;color:var(--muted)}
+  .teachbox h4{font-family:var(--head);font-size:17px;color:var(--text);margin:10px 0 4px}
+  .teachbox h4:first-child{margin-top:0}
+  .teachbox ul{margin:4px 0;padding-inline-start:20px}
+  .teachbox a{word-break:break-word}
+
+  /* badges / celebration */
+  .badges-t{font-family:var(--head);font-size:19px;margin-top:18px}
+  .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+  .badge{font-size:21px;width:44px;height:44px;border-radius:50%;background:var(--soft);display:flex;align-items:center;justify-content:center;border:2px dashed var(--line);opacity:.4;position:relative}
+  .badge.got{opacity:1;border:4px solid var(--rc)}
+  .badge.got::after{content:"✓";position:absolute;bottom:-5px;inset-inline-end:-5px;background:var(--rc);color:#140F33;font-size:12px;font-weight:800;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+  .badge.new{animation:pop .9s cubic-bezier(.2,1.6,.4,1)}
+  @keyframes pop{0%{transform:scale(.3)}60%{transform:scale(1.5)}100%{transform:scale(1)}}
+  .tap{animation:tap .28s ease-out}
+  @keyframes tap{40%{transform:scale(.92)}100%{transform:scale(1)}}
+  .pin.tap{transform-box:fill-box;transform-origin:center}
+  .burst{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}
+  .burst i{position:absolute;width:11px;height:15px;border-radius:3px;animation:fall 1.7s ease-out forwards}
+  .burst i.round{border-radius:50%;width:12px;height:12px}
+  @keyframes fall{from{transform:translate(0,0) rotate(0)}to{transform:translate(var(--dx),var(--dy)) rotate(560deg);opacity:0}}
+  .burst b{position:absolute;font-size:22px;line-height:1;animation:starfly .9s ease-out forwards;font-weight:400}
+  @keyframes starfly{from{transform:translate(-50%,-50%) scale(.4);opacity:1}to{transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(1.2);opacity:0}}
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    .burst{display:none}
+  }
+
+  footer{margin-top:26px;color:var(--muted);font-size:15px;line-height:1.7;text-align:center}
+  footer button{background:none;border:none;color:var(--link);cursor:pointer;text-decoration:underline;font-size:15px;min-height:44px}
+
+  .overlay{position:fixed;inset:0;background:rgba(10,7,30,.88);display:none;align-items:flex-start;justify-content:center;padding:18px;z-index:9;overflow-y:auto}
+  .overlay.show{display:flex}
+  .modal{max-width:720px;width:100%;background:var(--panel);border-radius:24px;padding:22px;margin:auto 0;overflow-wrap:anywhere;min-width:0}
+  .modal a{word-break:break-all}
+  .modal.center{text-align:center;max-width:480px}
+  .modal h3{font-family:var(--head);font-size:26px;margin:4px 0 10px}
+  .modal h4{font-family:var(--head);font-size:19px;margin:18px 0 6px;color:var(--text)}
+  .modal p{color:var(--muted);line-height:1.65;font-size:17px}
+  .modal li{color:var(--muted);line-height:1.6;font-size:15px}
+  .modal .big{font-size:70px}
+  .modal.win{border:4px solid var(--pink)}
+  .modal ul{padding-inline-start:20px;margin:6px 0}
+  .x{float:inline-end;--bc:var(--purple);--bi:var(--inkU);min-width:48px;padding:6px 12px;font-size:22px}
+</style>
+</head>
+<body>
+<div class="stars"></div><div class="stars2"></div>
+<div class="wrap">
+  <div class="topbar">
+    <div class="brand" id="brand">🤖 <i class="bw">Robot </i><span>Stories</span></div>
+    <div class="tools">
+      <div class="passport" id="passport" style="display:none"><div class="n">⭐ <span id="pCount">0 / 17</span></div><div class="l" data-t="badges"></div></div>
+      <button class="chip c-cyan" id="themeBtn" aria-pressed="false"></button>
+      <button class="chip c-purple" id="aboutBtn"></button>
+      <button class="chip lang" id="langBtn"></button>
+    </div>
+  </div>
+
+  <section id="intro">
+    <div class="robo">🤖</div>
+    <h1 id="introTitle"></h1>
+    <div class="abt" id="abt"></div>
+    <div class="introvid" id="introVid"></div>
+    <div class="worldpick" id="worldpick"></div>
+    <div class="intro-note" id="introNote"></div>
+  </section>
+
+  <section id="explore">
+    <div class="tabs" id="tabs"></div>
+    <div class="grid">
+      <div class="card">
+        <div id="world"></div>
+        <div class="hint" data-t="hint"></div>
+        <div class="timeline"><h3 data-t="timeline"></h3><div class="tl" id="tl"></div></div>
+      </div>
+      <div class="card story" id="story"></div>
+    </div>
+  </section>
+
+  <footer>
+    <span data-t="footer"></span><br>
+    <button id="aboutBtn2" data-t="aboutLink"></button>
+  </footer>
+</div>
+
+<div class="overlay" id="ov"><div class="modal" id="modal"></div></div>
+
+<script>
+/* ============ UI TEXT ============ */
+const UI = {
+  en:{
+    langBtn:"العربية", badges:"Stories rescued", about:"About & Sources", aboutLink:"About this project · NASA data · Image credits",
+    themeLight:"Light", themeDark:"Dark", teach:"🔎 For teachers and parents", narrH:"Narration", imgsH:"Pictures in this video", srcH:"NASA sources",
+    introTitle:'Abandoned but <span>not Forgotten</span>',
+    abt:[["🛰️","NASA left robots on the Moon, on Mars and in deep space, and each one made important discoveries."],
+         ["🤫","But most kids have never heard their stories."],
+         ["🚀","Your mission, Space Explorer: meet the robots, hear their stories, and rescue them from being forgotten!"]],
+    introNote:"Every fact comes from a NASA source. Every photo is a real NASA image.",
+    worlds:{moon:["🌕","The Moon","5 robots"],mars:["🔴","Mars","7 robots"],deep:["🌌","Deep Space","5 explorers"]},
+    hint:"Positions are simplified for kids. Tap a glowing dot.",
+    timeline:"🕰️ Timeline on this world",
+    empty:"Tap a glowing robot on the map.<br>Hear its story, then answer one question to rescue it from being forgotten!",
+    learned:"What we learned:", quiz:"Rescue question:", source:"NASA sources:", photo:"Photo", badgesT:"🏅 Your rescued stories",
+    status:{silent:"💤 Resting forever",useful:"✅ Still useful today",travel:"🚀 Still traveling"},
+    right1:"🏅 Story rescued! Great job, Explorer!", right2:"✓ Correct!", already:"🏅 You already rescued this story!", wrong:"✗ Not this one. Try again! You can do it 💪",
+    finaleT:"Master Space Explorer!", finaleP:"You rescued all 17 stories! Thanks to you, these robots will not be forgotten. Their science is still helping us explore space.", finaleB:"🚀 Awesome!",
+    footer:"Robot Stories · NASA Space Apps Challenge 2026 · Challenge: Abandoned but not Forgotten · Team from Palestine Polytechnic University (PPU), Hebron. Not an official NASA website.",
+    pos:"positions simplified", sun:"Sun", belt:"asteroid belt", helio:"edge of the Sun's bubble (heliopause)",
+    videoLabel:"Story video", readStory:"📜 Read the story", videoCredits:"🎬 Images in this video:", concept:"artist's concept",
+    narrTTS:"🔊 Narration: computer voice (Piper, LJSpeech voice, public domain).", narrRec:"🔊 Narration recorded by our team.",
+    narrFallback:"🔊 Narration in English, with subtitles.",
+    loadErr:"Could not load the robots. If you opened this file directly, please use the website link instead."
+  },
+  ar:{
+    langBtn:"English", badges:"قصص أنقذتها", about:"عن المشروع والمصادر", aboutLink:"عن المشروع · بيانات ناسا · مصادر الصور",
+    themeLight:"فاتح", themeDark:"داكن", teach:"🔎 للمعلّمين والأهل", narrH:"الصوت", imgsH:"الصور في هذا الفيديو", srcH:"مصادر ناسا",
+    introTitle:'مهجورة لكن <span>غير منسيّة</span>',
+    abt:[["🛰️","تركت ناسا روبوتات على القمر وعلى المريخ وفي الفضاء البعيد، وكل واحد منها حقّق اكتشافات مهمة."],
+         ["🤫","لكن معظم الأطفال لم يسمعوا قصصها أبدًا."],
+         ["🚀","مهمتك أيها المستكشف: تعرّف على الروبوتات، واسمع قصصها، وأنقذها من النسيان!"]],
+    introNote:"كل معلومة هنا من مصدر تابع لناسا، وكل صورة هي صورة حقيقية من ناسا.",
+    worlds:{moon:["🌕","القمر","5 روبوتات"],mars:["🔴","المريخ","7 روبوتات"],deep:["🌌","الفضاء البعيد","5 مستكشفين"]},
+    hint:"المواقع على الخريطة مبسّطة. اضغط على نقطة مضيئة.",
+    timeline:"🕰️ الخط الزمني لهذا العالم",
+    empty:"اضغط على روبوت مضيء على الخريطة.<br>استمع إلى قصته، ثم أجب عن سؤال واحد لتنقذه من النسيان!",
+    learned:"ماذا تعلّمنا:", quiz:"سؤال الإنقاذ:", source:"مصادر ناسا:", photo:"الصورة", badgesT:"🏅 القصص التي أنقذتها",
+    status:{silent:"💤 نائم إلى الأبد",useful:"✅ ما زال مفيدًا اليوم",travel:"🚀 ما زال مسافرًا"},
+    right1:"🏅 أنقذت القصة! أحسنت أيها المستكشف!", right2:"✓ صحيح!", already:"🏅 أنقذت هذه القصة من قبل!", wrong:"✗ ليست هذه. جرّب مرة أخرى! أنت تستطيع 💪",
+    finaleT:"مستكشف فضاء محترف!", finaleP:"أنقذت القصص الـ 17 كلها! بفضلك لن تُنسى هذه الروبوتات، وعلمها ما زال يساعدنا على استكشاف الفضاء.", finaleB:"🚀 رائع!",
+    footer:"قصص الروبوتات · تحدي ناسا لتطبيقات الفضاء 2026 · التحدي: مهجورة لكن غير منسيّة · فريق من جامعة بوليتكنك فلسطين، الخليل. هذا ليس موقعًا رسميًا لناسا.",
+    pos:"مواقع مبسّطة", sun:"الشمس", belt:"حزام الكويكبات", helio:"حافة فقاعة الشمس",
+    videoLabel:"فيديو القصة", readStory:"📜 اقرأ القصة", videoCredits:"🎬 الصور في هذا الفيديو:", concept:"رسم فني",
+    narrTTS:"🔊 الصوت: صوت حاسوبي (برنامج Piper).", narrRec:"🔊 الصوت بتسجيل فريقنا.",
+    narrFallback:"🔊 الصوت بالإنجليزية، ومعه ترجمة عربية على الشاشة 😊",
+    loadErr:"تعذّر تحميل الروبوتات. إذا فتحت الملف مباشرة، استعمل رابط الموقع بدلًا من ذلك."
+  }
+};
+
+/* ============ ROBOTS (loaded from data/*.json) ============ */
+let BOTS = [], VIDEOS = {}, CREDITS = {};
+
+const WORLDS = {moon:{fill:"#8FB4EE",dark:"#5B82C4"}, mars:{fill:"#E8834A",dark:"#B9541F"}, deep:{fill:null}};
+
+/* ============ CANDY COLORS ============ */
+// [color, dark text on it]; every pair is 6.9:1 or more.
+const PAL = {yellow:["#FFD23F","#2A1D00"], cyan:["#4FD1FF","#062B3A"], pink:["#FF7AB6","#3D0A22"],
+             lime:["#A3E635","#1A2E05"], orange:["#FF9F5A","#3A1A05"], purple:["#C4B5FD","#1E1240"]};
+const WCOL = {moon:["#9EC5FF","#0B1E3D"], mars:["#FF9F5A","#3A1A05"], deep:["#C4B5FD","#1E1240"]};
+// Each robot's own color (map pin, avatar ring, card border, video frame). Neighbors on a map differ;
+// no cyan on the blue Moon and no orange on orange Mars, so the pins stand out.
+const RCOL = {rr:"yellow", lrv:"pink", sv3:"lime", seis:"purple", lm:"orange",
+              vik:"cyan", soj:"pink", spi:"lime", opp:"cyan", ins:"purple", ing:"yellow", phx:"lime",
+              voy:"cyan", pio:"pink", kep:"lime", near:"orange", dawn:"purple"};
+const rc = b => PAL[RCOL[b.id]] || PAL.yellow;
+const rcStyle = b => `--bc:${rc(b)[0]};--bi:${rc(b)[1]};--rc:${rc(b)[0]}`;
+const wcStyle = w => `--bc:${WCOL[w][0]};--bi:${WCOL[w][1]};--wc:${WCOL[w][0]}`;
+
+/* ============ STATE ============ */
+let lang = "en", world = "moon", current = null, solved = {};
+try{ solved = JSON.parse(localStorage.getItem("rs_solved")||"{}"); lang = localStorage.getItem("rs_lang")||"en"; }catch(e){}
+const save = () => { try{ localStorage.setItem("rs_solved",JSON.stringify(solved)); localStorage.setItem("rs_lang",lang);}catch(e){} };
+const T = () => UI[lang];
+const B = b => b[lang];
+const $ = id => document.getElementById(id);
+
+/* ============ RENDER ============ */
+function applyLang(){
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang==="ar" ? "rtl" : "ltr";
+  document.querySelectorAll("[data-t]").forEach(el=>el.innerHTML = T()[el.dataset.t]);
+  $("langBtn").textContent = T().langBtn;
+  $("introTitle").innerHTML = T().introTitle;
+  $("abt").innerHTML = T().abt.map(([e,s],i)=>`<div class="${i===2?'mission':''}"><b>${e}</b>${s}</div>`).join("");
+  applyTheme();
+  $("introNote").textContent = T().introNote;
+  $("aboutBtn").innerHTML = `<span class="ic" aria-hidden="true">ℹ️</span> <span class="lbl">${T().about}</span>`;
+  $("aboutBtn").setAttribute("aria-label", T().about);
+  $("worldpick").innerHTML = Object.entries(T().worlds).map(([k,[e,t,c]])=>
+    `<button class="wcard" data-w="${k}" style="--wc:${WCOL[k][0]}"><div class="planet ${k}" aria-hidden="true"></div><div class="t">${t}</div><div class="c">${c}</div></button>`).join("");
+  document.querySelectorAll(".wcard").forEach(b=>b.onclick=()=>{world=b.dataset.w;current=null;show("explore");});
+  const iv = VIDEOS.intro && VIDEOS.intro[lang];
+  const ib = {media:["as15-86-11603","PIA17759","PIA04495","PIA22329","PIA23882"], sources:[]};
+  $("introVid").innerHTML = iv ? videoHTML(ib,{name:"Robot Stories"},iv) + teachHTML(ib,{},iv) : "";
+  if($("explore").style.display==="block") renderAll();
+  updateCount();
+}
+
+function show(which){
+  $("intro").style.display = which==="intro" ? "flex" : "none";
+  $("explore").style.display = which==="explore" ? "block" : "none";
+  $("passport").style.display = which==="explore" ? "block" : "none";
+  setWorldBody(which==="explore");
+  if(which!=="intro") document.querySelectorAll("#introVid video").forEach(v=>v.pause());
+  if(which==="explore") renderAll();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function setWorldBody(on){
+  if(on){ document.body.dataset.world = world; document.body.style.setProperty("--wc", WCOL[world][0]); }
+  else { delete document.body.dataset.world; document.body.style.removeProperty("--wc"); }
+}
+
+function renderTabs(){
+  $("tabs").innerHTML = Object.entries(T().worlds).map(([k,[e,t]])=>
+    `<button class="tab ${k===world?'on':''}" data-w="${k}" style="${wcStyle(k)}" aria-pressed="${k===world}">${e} ${t}</button>`).join("");
+  document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{world=b.dataset.w;current=null;setWorldBody(true);renderAll();});
+}
+
+function worldSVG(){
+  const w = WORLDS[world], bots = BOTS.filter(b=>b.world===world);
+  let bg;
+  if(w.fill){
+    const craters=[[150,105,22],[310,92,14],[262,282,26],[108,215,12],[362,215,18],[222,192,10],[300,195,9]]
+      .map(([x,y,r])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${w.dark}" opacity=".55"/>`).join("");
+    bg=`<defs><radialGradient id="g" cx="35%" cy="30%"><stop offset="0%" stop-color="#fff" stop-opacity=".35"/><stop offset="100%" stop-color="#000" stop-opacity=".45"/></radialGradient></defs>
+      <circle cx="240" cy="190" r="160" fill="${w.fill}"/>${craters}<circle cx="240" cy="190" r="160" fill="url(#g)"/>`;
+  } else {
+    bg=`<circle cx="60" cy="300" r="34" fill="#FFD23F"/><circle cx="60" cy="300" r="46" fill="#FFD23F" opacity=".18"/><text x="60" y="358" text-anchor="middle" style="fill:var(--muted)" font-size="14" font-family="sans-serif">${T().sun}</text>
+      <path d="M60 300 Q 250 330 345 118" stroke="#FF7AB6" stroke-dasharray="4 6" stroke-width="2" fill="none" opacity=".6"/>
+      <path d="M60 300 Q 250 300 405 255" stroke="#FF7AB6" stroke-dasharray="4 6" stroke-width="2" fill="none" opacity=".6"/><circle cx="60" cy="300" r="185" fill="none" stroke="#C4B5FD" stroke-dasharray="1 7" stroke-width="4" opacity=".6"/><text x="150" y="368" style="fill:var(--muted)" font-size="13" font-family="sans-serif">${T().belt}</text>
+      <circle cx="240" cy="190" r="150" fill="none" stroke="#4FD1FF" stroke-dasharray="2 8" stroke-width="2" opacity=".6"/>
+      <text x="240" y="30" text-anchor="middle" style="fill:var(--muted)" font-size="14" font-family="sans-serif">${T().helio}</text>`;
+  }
+  // Pins: each robot in its own color, with a dark 3D edge like the buttons. Rescued = ✓ in the label (not only a color).
+  const pins = bots.map(b=>{
+    const got = solved[b.id], c = rc(b)[0], sel = current===b.id, r = sel?14:11;
+    return `<g class="pin" data-id="${b.id}" tabindex="0" role="button" aria-label="${B(b).name}${got?' ✓':''}">
+      <circle class="ring" cx="${b.x}" cy="${b.y}" r="${r}" fill="none" stroke="${c}" stroke-width="3"/>
+      ${sel?`<circle cx="${b.x}" cy="${b.y}" r="${r+5}" fill="none" stroke="#fff" stroke-width="3"/>`:""}
+      <circle cx="${b.x}" cy="${b.y+4}" r="${r}" fill="#140F33" opacity=".75"/>
+      <circle class="dot" cx="${b.x}" cy="${b.y}" r="${r}" fill="${c}" stroke="#140F33" stroke-width="3"/>
+      <text x="${b.x}" y="${b.y-r-8}" text-anchor="middle">${got?"✓ ":""}${b.emoji} ${B(b).short}</text></g>`;
+  }).join("");
+  return `<svg viewBox="0 0 480 380" role="img">${bg}${pins}</svg>`;
+}
+
+function renderWorld(){
+  $("world").innerHTML = worldSVG();
+  document.querySelectorAll(".pin").forEach(p=>{
+    p.onclick=()=>pick(p.dataset.id);
+    p.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pick(p.dataset.id);}};
+  });
+  const bots = BOTS.filter(b=>b.world===world).sort((a,b)=>a.year-b.year);
+  $("tl").innerHTML = bots.map(b=>`<button class="tli ${current===b.id?'on':''}" data-id="${b.id}" style="${rcStyle(b)}" aria-pressed="${current===b.id}"><b>${b.year}</b>${solved[b.id]?'✓ ':""}${b.emoji} ${B(b).short}</button>`).join("");
+  document.querySelectorAll(".tli").forEach(t=>t.onclick=()=>pick(t.dataset.id));
+}
+
+function pick(id){
+  current=id; renderWorld(); renderStory();
+  if(window.innerWidth<900) $("story").scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function renderStory(){
+  const el=$("story"), b=BOTS.find(x=>x.id===current);
+  if(!b){ el.innerHTML=`<div class="empty"><div class="big">👆</div>${T().empty}</div>${badgesHTML()}`; return; }
+  const t=B(b), st=T().status[b.status], v=VIDEOS[b.id]&&VIDEOS[b.id][lang];
+  el.style.setProperty("--rc", rc(b)[0]);
+  // Order for kids: video → name/status → the question → story text + science → grown-up details (collapsed).
+  el.innerHTML=`
+    ${v ? videoHTML(b,t,v) : b.img ? `<div class="photo" id="ph"><img src="${b.img}" alt="${t.cap}" loading="lazy"><div class="fallback">${b.emoji}</div></div>`
+        : `<div class="photo broken"><div class="fallback">${b.emoji}</div></div>`}
+    <div class="sh"><div class="avatar">${b.emoji}</div><div><h2>${t.name}</h2>
+      <div class="meta">${b.year} · ${t.place}</div><span class="status st-${b.status}">${st}</span></div></div>
+    <div class="quiz"><div class="q"><span class="ql">🧠 ${T().quiz}</span>${t.q}</div>
+      ${t.opts.map((o,i)=>`<button class="opt" data-i="${i}">${o}</button>`).join("")}
+      <div class="fb ok" id="fb" role="status" aria-live="polite">${solved[b.id]?T().already:""}</div></div>
+    ${v ? `<details class="transcript"><summary class="pill c-cyan">${T().readStory}</summary><div class="speech">${t.story}</div></details>` : `<div class="speech">${t.story}</div>`}
+    <div class="science">🔬 <b>${T().learned}</b> ${t.science}</div>
+    ${teachHTML(b,t,v)}
+    ${badgesHTML()}`;
+  const im=el.querySelector(".photo img"); if(im) im.onerror=()=>$("ph").classList.add("broken");
+  const vid=el.querySelector("video");
+  if(vid) vid.addEventListener("ended",()=>{ const q=el.querySelector(".quiz"); q.classList.remove("ready"); void q.offsetWidth; q.classList.add("ready");
+    q.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"center"}); });
+  el.querySelectorAll(".opt").forEach(o=>o.onclick=()=>{
+    const i=+o.dataset.i, fb=$("fb");
+    if(i===b.a){
+      o.classList.add("right"); starBurst(o);
+      const first=!solved[b.id]; solved[b.id]=true; save();
+      fb.className="fb ok"; fb.textContent=first?T().right1:T().right2;
+      updateCount(); renderWorld(); el.querySelector(".badgebox").outerHTML=badgesHTML(first?b.id:null);
+      const all = first && BOTS.every(x=>solved[x.id]);
+      if(first && !all) celebrate();
+      if(all) finale();
+    } else { o.classList.add("wrong"); fb.className="fb no"; fb.textContent=T().wrong; }
+  });
+}
+
+function srcLabel(u){
+  const h=u.replace(/^https?:\/\//,"").split("/")[0].replace(/^www\./,"");
+  if(u.includes("news-release")) return `${h} · news release`;
+  if(h.startsWith("images.nasa.gov")) return `images.nasa.gov · ${u.split("/").pop()}`;
+  if(h==="nssdc.gsfc.nasa.gov") return `NSSDCA · ${u.split("id=").pop()}`;
+  return `${h}/${u.split("/").filter(Boolean).pop()}`;
+}
+
+function applyTheme(){
+  let t=null; try{ t=localStorage.getItem("rs_theme"); }catch(e){}
+  const light = t==="light";
+  if(light) document.documentElement.dataset.theme="light"; else delete document.documentElement.dataset.theme;
+  $("themeBtn").innerHTML = `<span class="ic" aria-hidden="true">${light?"🌙":"☀️"}</span> <span class="lbl">${light ? T().themeDark : T().themeLight}</span>`;
+  $("themeBtn").setAttribute("aria-label", light ? T().themeDark : T().themeLight);
+  $("themeBtn").setAttribute("aria-pressed", light);
+}
+
+function badgesHTML(fresh){
+  return `<div class="badgebox"><div class="badges-t">${T().badgesT}: <span class="ltr">${BOTS.filter(b=>solved[b.id]).length} / ${BOTS.length}</span></div><div class="badges">${BOTS.map(b=>`<div class="badge ${solved[b.id]?'got':''} ${b.id===fresh?'new':''}" style="--rc:${rc(b)[0]}" title="${B(b).name}${solved[b.id]?' ✓':''}">${b.emoji}</div>`).join("")}</div></div>`;
+}
+
+function videoHTML(b,t,v){
+  const other = lang==="en" ? "ar" : "en";
+  return `<div class="vid"><video controls playsinline preload="none" poster="${v.poster}" aria-label="${T().videoLabel}: ${t.name}">
+      <source src="${v.src}" type="video/mp4">
+      <track kind="subtitles" src="${v.subs[lang]}" srclang="${lang}" label="${lang==="ar"?"العربية":"English"}" default>
+      <track kind="subtitles" src="${v.subs[other]}" srclang="${other}" label="${other==="ar"?"العربية":"English"}">
+    </video></div>`;
+}
+
+// Everything grown-ups need (voice, picture credits, NASA sources), collapsed under one button.
+function teachHTML(b,t,v){
+  let narr = "", pics = "";
+  if(v){
+    const n = v.narration||{};
+    narr = `<h4>🔊 ${T().narrH}</h4><div>${(n.source==="recorded" ? T().narrRec : (n.lang!==lang ? T().narrFallback : T().narrTTS)).replace(/^🔊\s*/,"").replace(/^(Narration|الصوت)\s*:\s*/,"")}</div>`;
+    const creds = (b.media||[]).filter(id=>CREDITS[id]).map(id=>{ const c=CREDITS[id];
+      return `<li><a href="${c.page}" target="_blank" rel="noopener">${c.title}</a> <span class="ltr">(${c.credit}${c.concept?`, ${T().concept}`:""})</span></li>`; }).join("");
+    if(creds) pics = `<h4>🎬 ${T().imgsH}</h4><ul>${creds}</ul>`;
+  } else if(b.img){
+    pics = `<h4>📷 ${T().photo}</h4><div>${t.cap}. <span class="ltr"><a href="https://images.nasa.gov/details/${b.nasaId}" target="_blank" rel="noopener">${b.credit}</a></span></div>`;
+  }
+  const list = (b.sources||[b.src]).filter(Boolean);
+  const srcs = !list.length ? "" : `<h4>🔗 ${T().srcH}</h4><ul>${list.map(u=>`<li><a class="ltr" href="${u}" target="_blank" rel="noopener">${srcLabel(u)}</a></li>`).join("")}</ul>`;
+  return `<details class="teach"><summary class="pill c-purple">${T().teach}</summary><div class="teachbox">${narr}${pics}${srcs}</div></details>`;
+}
+
+const CANDY=["#4FD1FF","#FF7AB6","#A3E635","#FF9F5A","#C4B5FD","#FFD23F"];
+const calm=()=>matchMedia("(prefers-reduced-motion: reduce)").matches;
+// Badge earned = multicolor confetti; big=true (all badges) = a bigger, longer celebration.
+function celebrate(big){
+  if(calm()) return;
+  const box=document.createElement("div"); box.className="burst";
+  const n = big ? 220 : 80;
+  for(let i=0;i<n;i++){ const p=document.createElement("i");
+    if(i%3===0) p.className="round";
+    p.style.left=big?`${10+Math.random()*80}%`:"50%"; p.style.top=big?"30%":"45%"; p.style.background=CANDY[i%CANDY.length];
+    p.style.setProperty("--dx",`${(Math.random()-.5)*(big?80:110)}vw`); p.style.setProperty("--dy",`${(Math.random()-.15)*(big?110:90)}vh`);
+    p.style.animationDelay=`${Math.random()*(big?.6:.15)}s`; p.style.animationDuration=big?"2.6s":"1.7s"; box.appendChild(p); }
+  document.body.appendChild(box); setTimeout(()=>box.remove(), big?3600:2000);
+}
+// Correct answer = a little burst of stars from the button.
+function starBurst(el){
+  if(calm()) return;
+  const r=el.getBoundingClientRect(), box=document.createElement("div"); box.className="burst";
+  for(let i=0;i<12;i++){ const s=document.createElement("b"); s.textContent="★";
+    const a=i/12*Math.PI*2, d=60+Math.random()*40;
+    s.style.left=`${r.left+r.width*(lang==="ar"?.15:.85)}px`; s.style.top=`${r.top+r.height/2}px`; s.style.color=CANDY[i%CANDY.length];
+    s.style.setProperty("--dx",`${Math.cos(a)*d}px`); s.style.setProperty("--dy",`${Math.sin(a)*d}px`); box.appendChild(s); }
+  document.body.appendChild(box); setTimeout(()=>box.remove(),1000);
+}
+function updateCount(){ $("pCount").textContent=`${BOTS.filter(b=>solved[b.id]).length} / ${BOTS.length}`; }
+
+function openModal(html,center){ $("modal").className="modal"+(center?" center":""); $("modal").innerHTML=html; $("ov").classList.add("show"); }
+function closeModal(){ $("ov").classList.remove("show"); }
+$("ov").onclick=e=>{ if(e.target.id==="ov") closeModal(); };
+
+function finale(){
+  openModal(`<div class="big">🏆</div><h3>${T().finaleT}</h3><p>${T().finaleP}</p><button class="btn" onclick="closeModal()">${T().finaleB}</button>`,true);
+  $("modal").classList.add("win"); celebrate(true); setTimeout(()=>celebrate(true),900);
+}
+
+function about(){
+  const ar = lang==="ar";
+  const credits = BOTS.filter((b,i)=>b.nasaId && BOTS.findIndex(x=>x.nasaId===b.nasaId)===i).map(b=>`<li><b>${B(b).name}</b>: <span class="ltr"><a href="https://images.nasa.gov/details/${b.nasaId}" target="_blank" rel="noopener">${b.nasaId}</a> · ${b.credit}</span></li>`).join("");
+  const vcredits = Object.entries(CREDITS).map(([id,c])=>`<li><b>${c.title}</b>: <span class="ltr"><a href="${c.page}" target="_blank" rel="noopener">${c.video?"🎬 ":""}${id}</a> · ${c.credit}${c.concept?" (artist's concept)":""}</span></li>`).join("");
+  const srcs = BOTS.map(b=>`<li><b>${B(b).name}</b>: ${(b.sources||[b.src]).map(u=>`<a class="ltr" href="${u}" target="_blank" rel="noopener">${u.replace(/^https:\/\//,"")}</a>`).join(" · ")}</li>`).join("");
+  openModal(ar ? `
+    <button class="btn x" onclick="closeModal()" aria-label="إغلاق">×</button>
+    <h3>عن قصص الروبوتات</h3>
+    <p>منذ الستينيات تركت ناسا معدات كثيرة على القمر وعلى المريخ وفي الفضاء البعيد. يحكي هذا الموقع قصص ${BOTS.length} من هذه الروبوتات للأطفال في عمر المدرسة، بصوت الروبوت نفسه، ويربط كل قصة بالعلم الذي جعلته ممكنًا. الموقع بالعربية والإنجليزية حتى يصل إلى الأطفال الناطقين بالعربية أيضًا.</p>
+    <h4>كيف يعمل</h4>
+    <p>اختر عالمًا ← اضغط على روبوت ← اقرأ قصته وماذا تعلّمنا منه ← أجب عن سؤال ← اربح شارة. اجمع كل الشارات لتصبح مستكشف فضاء محترف.</p>
+    <h4>بيانات ناسا المستخدمة</h4>
+    <p>قائمة الأرشيف المنسّق لبيانات علوم الفضاء التابع لناسا (NSSDCA)، وصفحات بعثات ناسا ومختبر الدفع النفاث، وصور من مكتبة صور ناسا، وصور المسبار المداري القمري التي ما زالت تُظهر آثار عجلات مركبات أبولو على القمر.</p>
+    <ul>${srcs}</ul>
+    <h4>مصادر الصور</h4>
+    <p>كل الصور ومقاطع الفيديو من ناسا: من مكتبة صور وفيديو ناسا، وصورة واحدة من موقع فريق كاميرا المسبار المداري القمري (NASA/GSFC/Arizona State University). مذكور مصدر كل منها أدناه. استعمال صور ناسا لا يعني أن ناسا تتبنّى هذا المشروع. <b>هذا ليس موقعًا رسميًا لناسا.</b></p>
+    <ul>${credits}</ul>
+    <h4>صور فيديوهات القصص</h4>
+    <ul>${vcredits}</ul>
+    <h4>أدوات أخرى</h4>
+    <p>كُتب الموقع بلغات الويب الأساسية دون أي مكتبات. الخطوط من خطوط غوغل (رخصة الخطوط المفتوحة). صُنعت الفيديوهات ببرنامج Remotion وبرنامج FFmpeg. الصوت الحاسوبي من برنامج Piper (رخصة MIT) بصوت LJSpeech (بيانات في الملك العام). لا توجد موسيقى في الفيديوهات. استعملنا مساعد الذكاء الاصطناعي Claude للمساعدة في كتابة الكود والنصوص والترجمة، وراجع الفريق كل المعلومات على مصادر ناسا.</p>
+    <h4>فيديوهات القصص</h4>
+    <p>كل فيديو قصة مصنوع فقط من صور ناسا الحقيقية وفيديو ناسا (مع ذكر المصدر على الشاشة وفي القائمة أعلاه)، ونصوص متحركة ورسومات بسيطة. كل جملة في الفيديو هي نفس النص الموجود في صفحة الروبوت، وتمت مراجعتها على مصدر ناسا المذكور لذلك الروبوت. بعض الصور رسوم فنية من ناسا، ومكتوب عليها ذلك.</p>
+    <h4>الفريق [TEAM NAME]</h4>
+    <p>طلاب علم الحاسوب من جامعة بوليتكنك فلسطين، الخليل: مصطفى النتشة، إسلام جرادات، ملك مصري، نسرين العجلوني، أسامة أبو الحلاوة. تحدي ناسا لتطبيقات الفضاء 2026، فعالية نابلس.</p>
+    <p style="text-align:center;margin-top:16px"><button class="btn" onclick="closeModal()">إغلاق</button></p>`
+  : `
+    <button class="btn x" onclick="closeModal()" aria-label="Close">×</button>
+    <h3>About Robot Stories</h3>
+    <p>Since the 1960s, NASA has left hardware on the Moon, on Mars and in deep space. Robot Stories introduces school-age kids to ${BOTS.length} of these machines. Each robot tells its own story in the first person and connects it to the science it made possible. The site is in English and Arabic so that Arabic-speaking kids can enjoy it too.</p>
+    <h4>How it works</h4>
+    <p>Pick a world → tap a robot → read its story and what we learned → answer a quick quiz → earn a badge. Collect every badge to become a Master Space Explorer.</p>
+    <h4>NASA data used</h4>
+    <p>NASA's Space Science Data Coordinated Archive (NSSDCA), NASA and JPL mission pages, the NASA Image and Video Library, and Lunar Reconnaissance Orbiter images that still show Apollo rover tracks on the Moon today.</p>
+    <ul>${srcs}</ul>
+    <h4>Image credits</h4>
+    <p>All images and video clips come from NASA: the NASA Image and Video Library, and one Lunar Reconnaissance Orbiter Camera image from the LROC team site (NASA/GSFC/Arizona State University). Each is credited below. Use of NASA images does not imply NASA endorsement. <b>This is not an official NASA website.</b></p>
+    <ul>${credits}</ul>
+    <h4>Images in the story videos</h4>
+    <ul>${vcredits}</ul>
+    <h4>Other tools</h4>
+    <p>Plain HTML, CSS and JavaScript with no libraries. Fonts from Google Fonts (SIL Open Font License). Videos made with Remotion and FFmpeg. Computer narration by Piper (MIT license) with the LJSpeech voice (public-domain dataset). No music is used in the videos. We used the AI assistant Claude to help write code, text and the Arabic translation; the team checked every fact against NASA sources.</p>
+    <h4>Story videos</h4>
+    <p>Each story video is made only from real NASA photos and NASA video (credited on screen and in the list above), animated text and simple diagrams. Every sentence in a video is the same text shown on the robot's page, checked against the NASA source linked for that robot. Some pictures are artist's concepts made by NASA, and they are labeled that way.</p>
+    <h4>Team [TEAM NAME]</h4>
+    <p>Computer Science students from Palestine Polytechnic University (PPU), Hebron: Mostafa Al-Natsheh, Islam Jaradat, Malak Masri, Nisreen Al-Ajlouni, Osama Abu Al-Halaweh. NASA Space Apps Challenge 2026, Nablus local event.</p>
+    <p style="text-align:center;margin-top:16px"><button class="btn" onclick="closeModal()">Close</button></p>`);
+}
+
+function renderAll(){ renderTabs(); renderWorld(); renderStory(); updateCount(); }
+
+$("themeBtn").onclick=()=>{ const light=document.documentElement.dataset.theme==="light"; try{ localStorage.setItem("rs_theme", light?"dark":"light"); }catch(e){} applyTheme(); };
+document.addEventListener("pointerdown",e=>{ const t=e.target.closest(".pin"); if(!t) return; t.classList.remove("tap"); void t.getBoundingClientRect(); t.classList.add("tap"); });
+$("langBtn").onclick=()=>{ lang = lang==="en"?"ar":"en"; save(); applyLang(); if($("ov").classList.contains("show") && $("modal").querySelector("h4")) about(); };
+$("aboutBtn").onclick=about; $("aboutBtn2").onclick=about;
+$("brand").onclick=()=>show("intro");
+document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeModal(); });
+
+const getJSON = u => fetch(u).then(r=>{ if(!r.ok) throw new Error(u); return r.json(); });
+Promise.all([getJSON("data/robots.json"), getJSON("data/videos.json").catch(()=>({})), getJSON("data/credits.json").catch(()=>({}))])
+  .then(([bots,videos,credits])=>{ BOTS=bots; VIDEOS=videos; CREDITS=credits; applyLang(); show("intro"); })
+  .catch(()=>{ applyLang(); show("intro"); $("worldpick").innerHTML=`<p style="color:var(--noText)">${T().loadErr}</p>`; });
+</script>
+</body>
+</html>

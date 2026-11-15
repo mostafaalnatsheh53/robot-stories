@@ -1,0 +1,506 @@
+{
+  "opp": {
+    "en": {
+      "src": "videos/opp.en.mp4",
+      "poster": "posters/opp.en.jpg",
+      "subs": {
+        "en": "subs/opp.en.en.vtt",
+        "ar": "subs/opp.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 40.3
+    },
+    "ar": {
+      "src": "videos/opp.ar.mp4",
+      "poster": "posters/opp.ar.jpg",
+      "subs": {
+        "en": "subs/opp.ar.en.vtt",
+        "ar": "subs/opp.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 40.3
+    }
+  },
+  "intro": {
+    "en": {
+      "src": "videos/intro.en.mp4",
+      "poster": "posters/intro.en.jpg",
+      "subs": {
+        "en": "subs/intro.en.en.vtt",
+        "ar": "subs/intro.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 23.6
+    },
+    "ar": {
+      "src": "videos/intro.ar.mp4",
+      "poster": "posters/intro.ar.jpg",
+      "subs": {
+        "en": "subs/intro.ar.en.vtt",
+        "ar": "subs/intro.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 23.9
+    }
+  },
+  "lrv": {
+    "en": {
+      "src": "videos/lrv.en.mp4",
+      "poster": "posters/lrv.en.jpg",
+      "subs": {
+        "en": "subs/lrv.en.en.vtt",
+        "ar": "subs/lrv.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 42
+    },
+    "ar": {
+      "src": "videos/lrv.ar.mp4",
+      "poster": "posters/lrv.ar.jpg",
+      "subs": {
+        "en": "subs/lrv.ar.en.vtt",
+        "ar": "subs/lrv.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 41.9
+    }
+  },
+  "rr": {
+    "en": {
+      "src": "videos/rr.en.mp4",
+      "poster": "posters/rr.en.jpg",
+      "subs": {
+        "en": "subs/rr.en.en.vtt",
+        "ar": "subs/rr.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 39.3
+    },
+    "ar": {
+      "src": "videos/rr.ar.mp4",
+      "poster": "posters/rr.ar.jpg",
+      "subs": {
+        "en": "subs/rr.ar.en.vtt",
+        "ar": "subs/rr.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 39.3
+    }
+  },
+  "ing": {
+    "en": {
+      "src": "videos/ing.en.mp4",
+      "poster": "posters/ing.en.jpg",
+      "subs": {
+        "en": "subs/ing.en.en.vtt",
+        "ar": "subs/ing.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 44.4
+    },
+    "ar": {
+      "src": "videos/ing.ar.mp4",
+      "poster": "posters/ing.ar.jpg",
+      "subs": {
+        "en": "subs/ing.ar.en.vtt",
+        "ar": "subs/ing.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 44.3
+    }
+  },
+  "voy": {
+    "en": {
+      "src": "videos/voy.en.mp4",
+      "poster": "posters/voy.en.jpg",
+      "subs": {
+        "en": "subs/voy.en.en.vtt",
+        "ar": "subs/voy.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 40.5
+    },
+    "ar": {
+      "src": "videos/voy.ar.mp4",
+      "poster": "posters/voy.ar.jpg",
+      "subs": {
+        "en": "subs/voy.ar.en.vtt",
+        "ar": "subs/voy.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 41
+    }
+  },
+  "dawn": {
+    "en": {
+      "src": "videos/dawn.en.mp4",
+      "poster": "posters/dawn.en.jpg",
+      "subs": {
+        "en": "subs/dawn.en.en.vtt",
+        "ar": "subs/dawn.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 39
+    },
+    "ar": {
+      "src": "videos/dawn.ar.mp4",
+      "poster": "posters/dawn.ar.jpg",
+      "subs": {
+        "en": "subs/dawn.ar.en.vtt",
+        "ar": "subs/dawn.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 39.1
+    }
+  },
+  "seis": {
+    "en": {
+      "src": "videos/seis.en.mp4",
+      "poster": "posters/seis.en.jpg",
+      "subs": {
+        "en": "subs/seis.en.en.vtt",
+        "ar": "subs/seis.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 43.6
+    },
+    "ar": {
+      "src": "videos/seis.ar.mp4",
+      "poster": "posters/seis.ar.jpg",
+      "subs": {
+        "en": "subs/seis.ar.en.vtt",
+        "ar": "subs/seis.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 44.2
+    }
+  },
+  "sv3": {
+    "en": {
+      "src": "videos/sv3.en.mp4",
+      "poster": "posters/sv3.en.jpg",
+      "subs": {
+        "en": "subs/sv3.en.en.vtt",
+        "ar": "subs/sv3.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 38.6
+    },
+    "ar": {
+      "src": "videos/sv3.ar.mp4",
+      "poster": "posters/sv3.ar.jpg",
+      "subs": {
+        "en": "subs/sv3.ar.en.vtt",
+        "ar": "subs/sv3.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 38.7
+    }
+  },
+  "lm": {
+    "en": {
+      "src": "videos/lm.en.mp4",
+      "poster": "posters/lm.en.jpg",
+      "subs": {
+        "en": "subs/lm.en.en.vtt",
+        "ar": "subs/lm.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 36.1
+    },
+    "ar": {
+      "src": "videos/lm.ar.mp4",
+      "poster": "posters/lm.ar.jpg",
+      "subs": {
+        "en": "subs/lm.ar.en.vtt",
+        "ar": "subs/lm.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 36.2
+    }
+  },
+  "vik": {
+    "en": {
+      "src": "videos/vik.en.mp4",
+      "poster": "posters/vik.en.jpg",
+      "subs": {
+        "en": "subs/vik.en.en.vtt",
+        "ar": "subs/vik.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 39.6
+    },
+    "ar": {
+      "src": "videos/vik.ar.mp4",
+      "poster": "posters/vik.ar.jpg",
+      "subs": {
+        "en": "subs/vik.ar.en.vtt",
+        "ar": "subs/vik.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 40.1
+    }
+  },
+  "soj": {
+    "en": {
+      "src": "videos/soj.en.mp4",
+      "poster": "posters/soj.en.jpg",
+      "subs": {
+        "en": "subs/soj.en.en.vtt",
+        "ar": "subs/soj.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 38.3
+    },
+    "ar": {
+      "src": "videos/soj.ar.mp4",
+      "poster": "posters/soj.ar.jpg",
+      "subs": {
+        "en": "subs/soj.ar.en.vtt",
+        "ar": "subs/soj.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 38.2
+    }
+  },
+  "spi": {
+    "en": {
+      "src": "videos/spi.en.mp4",
+      "poster": "posters/spi.en.jpg",
+      "subs": {
+        "en": "subs/spi.en.en.vtt",
+        "ar": "subs/spi.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 40.1
+    },
+    "ar": {
+      "src": "videos/spi.ar.mp4",
+      "poster": "posters/spi.ar.jpg",
+      "subs": {
+        "en": "subs/spi.ar.en.vtt",
+        "ar": "subs/spi.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 40.4
+    }
+  },
+  "ins": {
+    "en": {
+      "src": "videos/ins.en.mp4",
+      "poster": "posters/ins.en.jpg",
+      "subs": {
+        "en": "subs/ins.en.en.vtt",
+        "ar": "subs/ins.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 41.1
+    },
+    "ar": {
+      "src": "videos/ins.ar.mp4",
+      "poster": "posters/ins.ar.jpg",
+      "subs": {
+        "en": "subs/ins.ar.en.vtt",
+        "ar": "subs/ins.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 41.6
+    }
+  },
+  "phx": {
+    "en": {
+      "src": "videos/phx.en.mp4",
+      "poster": "posters/phx.en.jpg",
+      "subs": {
+        "en": "subs/phx.en.en.vtt",
+        "ar": "subs/phx.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 39.9
+    },
+    "ar": {
+      "src": "videos/phx.ar.mp4",
+      "poster": "posters/phx.ar.jpg",
+      "subs": {
+        "en": "subs/phx.ar.en.vtt",
+        "ar": "subs/phx.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 40.2
+    }
+  },
+  "pio": {
+    "en": {
+      "src": "videos/pio.en.mp4",
+      "poster": "posters/pio.en.jpg",
+      "subs": {
+        "en": "subs/pio.en.en.vtt",
+        "ar": "subs/pio.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 38.2
+    },
+    "ar": {
+      "src": "videos/pio.ar.mp4",
+      "poster": "posters/pio.ar.jpg",
+      "subs": {
+        "en": "subs/pio.ar.en.vtt",
+        "ar": "subs/pio.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 38.1
+    }
+  },
+  "kep": {
+    "en": {
+      "src": "videos/kep.en.mp4",
+      "poster": "posters/kep.en.jpg",
+      "subs": {
+        "en": "subs/kep.en.en.vtt",
+        "ar": "subs/kep.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 38.6
+    },
+    "ar": {
+      "src": "videos/kep.ar.mp4",
+      "poster": "posters/kep.ar.jpg",
+      "subs": {
+        "en": "subs/kep.ar.en.vtt",
+        "ar": "subs/kep.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 37.9
+    }
+  },
+  "near": {
+    "en": {
+      "src": "videos/near.en.mp4",
+      "poster": "posters/near.en.jpg",
+      "subs": {
+        "en": "subs/near.en.en.vtt",
+        "ar": "subs/near.en.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 42.9
+    },
+    "ar": {
+      "src": "videos/near.ar.mp4",
+      "poster": "posters/near.ar.jpg",
+      "subs": {
+        "en": "subs/near.ar.en.vtt",
+        "ar": "subs/near.ar.ar.vtt"
+      },
+      "narration": {
+        "lang": "en",
+        "source": "tts"
+      },
+      "seconds": 42.9
+    }
+  }
+}

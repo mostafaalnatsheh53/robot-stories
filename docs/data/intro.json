@@ -1,0 +1,26 @@
+{
+  "id": "intro",
+  "world": "base",
+  "emoji": "🤖",
+  "years": "NASA Space Apps 2026",
+  "en": {
+    "name": "Robot Stories",
+    "script": [
+      "NASA left robots on the Moon, on Mars and in deep space.",
+      "And each one made important discoveries.",
+      "But most kids have never heard their stories.",
+      "Your mission, Space Explorer: meet the robots, hear their stories, and rescue them from being forgotten!",
+      "Pick a world to begin!"
+    ]
+  },
+  "ar": {
+    "name": "قصص الروبوتات",
+    "script": [
+      "تركت ناسا روبوتات على القمر وعلى المريخ وفي الفضاء البعيد.",
+      "وكل واحد منها حقّق اكتشافات مهمة.",
+      "لكن معظم الأطفال لم يسمعوا قصصها أبدًا.",
+      "مهمتك أيها المستكشف: تعرّف على الروبوتات، واسمع قصصها، وأنقذها من النسيان!",
+      "اختر عالمًا لتبدأ!"
+    ]
+  }
+}
