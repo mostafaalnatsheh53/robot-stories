@@ -291,7 +291,7 @@ const UI = {
     status:{silent:"💤 Resting forever",useful:"✅ Still useful today",travel:"🚀 Still traveling"},
     right1:"🏅 Story rescued! Great job, Explorer!", right2:"✓ Correct!", already:"🏅 You already rescued this story!", wrong:"✗ Not this one. Try again! You can do it 💪",
     finaleT:"Master Space Explorer!", finaleP:"You rescued all 17 stories! Thanks to you, these robots will not be forgotten. Their science is still helping us explore space.", finaleB:"🚀 Awesome!",
-    footer:"Robot Stories · NASA Space Apps Challenge 2026 · Challenge: Abandoned but not Forgotten · Team from Palestine Polytechnic University (PPU), Hebron. Not an official NASA website.",
+    footer:"Robot Stories · NASA Space Apps Challenge 2026 · Challenge: Abandoned but not Forgotten · Team The Final Countdown, Palestine Polytechnic University (PPU), Hebron. Not an official NASA website.",
     pos:"positions simplified", sun:"Sun", belt:"asteroid belt", helio:"edge of the Sun's bubble (heliopause)",
     videoLabel:"Story video", readStory:"📜 Read the story", videoCredits:"🎬 Images in this video:", concept:"artist's concept",
     narrTTS:"🔊 Narration: computer voice (Piper, LJSpeech voice, public domain).", narrRec:"🔊 Narration recorded by our team.",
@@ -314,7 +314,7 @@ const UI = {
     status:{silent:"💤 نائم إلى الأبد",useful:"✅ ما زال مفيدًا اليوم",travel:"🚀 ما زال مسافرًا"},
     right1:"🏅 أنقذت القصة! أحسنت أيها المستكشف!", right2:"✓ صحيح!", already:"🏅 أنقذت هذه القصة من قبل!", wrong:"✗ ليست هذه. جرّب مرة أخرى! أنت تستطيع 💪",
     finaleT:"مستكشف فضاء محترف!", finaleP:"أنقذت القصص الـ 17 كلها! بفضلك لن تُنسى هذه الروبوتات، وعلمها ما زال يساعدنا على استكشاف الفضاء.", finaleB:"🚀 رائع!",
-    footer:"قصص الروبوتات · تحدي ناسا لتطبيقات الفضاء 2026 · التحدي: مهجورة لكن غير منسيّة · فريق من جامعة بوليتكنك فلسطين، الخليل. هذا ليس موقعًا رسميًا لناسا.",
+    footer:"قصص الروبوتات · تحدي ناسا لتطبيقات الفضاء 2026 · التحدي: مهجورة لكن غير منسيّة · فريق <span class="ltr">The Final Countdown</span> من جامعة بوليتكنك فلسطين، الخليل. هذا ليس موقعًا رسميًا لناسا.",
     pos:"مواقع مبسّطة", sun:"الشمس", belt:"حزام الكويكبات", helio:"حافة فقاعة الشمس",
     videoLabel:"فيديو القصة", readStory:"📜 اقرأ القصة", videoCredits:"🎬 الصور في هذا الفيديو:", concept:"رسم فني",
     narrTTS:"🔊 الصوت: صوت حاسوبي (برنامج Piper).", narrRec:"🔊 الصوت بتسجيل فريقنا.",
@@ -578,8 +578,8 @@ function about(){
     <p>كُتب الموقع بلغات الويب الأساسية دون أي مكتبات. الخطوط من خطوط غوغل (رخصة الخطوط المفتوحة). صُنعت الفيديوهات ببرنامج Remotion وبرنامج FFmpeg. الصوت الحاسوبي من برنامج Piper (رخصة MIT) بصوت LJSpeech (بيانات في الملك العام). لا توجد موسيقى في الفيديوهات. استعملنا مساعد الذكاء الاصطناعي Claude للمساعدة في كتابة الكود والنصوص والترجمة، وراجع الفريق كل المعلومات على مصادر ناسا.</p>
     <h4>فيديوهات القصص</h4>
     <p>كل فيديو قصة مصنوع فقط من صور ناسا الحقيقية وفيديو ناسا (مع ذكر المصدر على الشاشة وفي القائمة أعلاه)، ونصوص متحركة ورسومات بسيطة. كل جملة في الفيديو هي نفس النص الموجود في صفحة الروبوت، وتمت مراجعتها على مصدر ناسا المذكور لذلك الروبوت. بعض الصور رسوم فنية من ناسا، ومكتوب عليها ذلك.</p>
-    <h4>الفريق [TEAM NAME]</h4>
-    <p>طلاب علم الحاسوب من جامعة بوليتكنك فلسطين، الخليل: مصطفى النتشة، إسلام جرادات، ملك مصري، نسرين العجلوني، أسامة أبو الحلاوة. تحدي ناسا لتطبيقات الفضاء 2026، فعالية نابلس.</p>
+    <h4>الفريق: <span class="ltr">The Final Countdown</span></h4>
+    <p>طلاب علم الحاسوب من جامعة بوليتكنك فلسطين، الخليل: إسلام أكرم سالم جرادات، ملك عماد جودت المصري، مصطفى وسام النتشة، أسامة نبيل صلاح أبو الحلاوة، نسرين محمد خضر العجلوني. تحدي ناسا لتطبيقات الفضاء 2026، فعالية نابلس.</p>
     <p style="text-align:center;margin-top:16px"><button class="btn" onclick="closeModal()">إغلاق</button></p>`
   : `
     <button class="btn x" onclick="closeModal()" aria-label="Close">×</button>
@@ -599,8 +599,8 @@ function about(){
     <p>Plain HTML, CSS and JavaScript with no libraries. Fonts from Google Fonts (SIL Open Font License). Videos made with Remotion and FFmpeg. Computer narration by Piper (MIT license) with the LJSpeech voice (public-domain dataset). No music is used in the videos. We used the AI assistant Claude to help write code, text and the Arabic translation; the team checked every fact against NASA sources.</p>
     <h4>Story videos</h4>
     <p>Each story video is made only from real NASA photos and NASA video (credited on screen and in the list above), animated text and simple diagrams. Every sentence in a video is the same text shown on the robot's page, checked against the NASA source linked for that robot. Some pictures are artist's concepts made by NASA, and they are labeled that way.</p>
-    <h4>Team [TEAM NAME]</h4>
-    <p>Computer Science students from Palestine Polytechnic University (PPU), Hebron: Mostafa Al-Natsheh, Islam Jaradat, Malak Masri, Nisreen Al-Ajlouni, Osama Abu Al-Halaweh. NASA Space Apps Challenge 2026, Nablus local event.</p>
+    <h4>Team: The Final Countdown</h4>
+    <p>Computer Science students from Palestine Polytechnic University (PPU), Hebron: Islam Akram Salem Jaradat, Malak Emad Jawdat El-Masri, Mostafa Wisam Al-Natsheh, Osama Nabeel Salah Abu Al-Halaweh, Nisreen Mohammad Khader Al-Ajlouni. NASA Space Apps Challenge 2026, Nablus local event.</p>
     <p style="text-align:center;margin-top:16px"><button class="btn" onclick="closeModal()">Close</button></p>`);
 }
 

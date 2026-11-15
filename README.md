@@ -7,8 +7,9 @@ tell kids aged 9–14 their own stories, in the first person, with a short story
 
 - **Event:** NASA Space Apps Challenge 2026 (Nablus local event)
 - **Challenge:** *Abandoned but not Forgotten*
-- **Team:** Computer Science students from Palestine Polytechnic University (PPU), Hebron:
-  Mostafa Al-Natsheh, Islam Jaradat, Malak Masri, Nisreen Al-Ajlouni, Osama Abu Al-Halaweh.
+- **Team:** The Final Countdown, Palestine Polytechnic University (PPU), Hebron:
+  Islam Akram Salem Jaradat, Malak Emad Jawdat El-Masri, Mostafa Wisam Al-Natsheh,
+  Osama Nabeel Salah Abu Al-Halaweh, Nisreen Mohammad Khader Al-Ajlouni.
 
 This is not an official NASA website. Use of NASA images does not imply NASA endorsement.
 
