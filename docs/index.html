@@ -508,7 +508,7 @@ function teachHTML(b,t,v){
   let narr = "", pics = "";
   if(v){
     const n = v.narration||{};
-    narr = `<h4>🔊 ${T().narrH}</h4><div>${(n.source==="recorded" ? T().narrRec : (n.lang!==lang ? T().narrFallback : T().narrTTS)).replace(/^🔊\s*/,"").replace(/^(Narration|الصوت)\s*:\s*/,"")}</div>`;
+    narr = `<h4>🔊 ${T().narrH}</h4><div>${(n.source==="recorded" ? T().narrRec : (n.lang!==lang ? T().narrFallback : T().narrTTS)).replace(/^🔊\s*/,"").replace(/^(Narration|الصوت)\s*:\s*/,"").replace(/^./,c=>c.toUpperCase())}</div>`;
     const creds = (b.media||[]).filter(id=>CREDITS[id]).map(id=>{ const c=CREDITS[id];
       return `<li><a href="${c.page}" target="_blank" rel="noopener">${c.title}</a> <span class="ltr">(${c.credit}${c.concept?`, ${T().concept}`:""})</span></li>`; }).join("");
     if(creds) pics = `<h4>🎬 ${T().imgsH}</h4><ul>${creds}</ul>`;
